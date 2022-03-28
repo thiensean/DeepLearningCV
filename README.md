@@ -250,6 +250,8 @@ Below are a sample of the results:
 
 This is a work in progress and might work better using image segmentation techniques. [17]
 
+The video will not be included as it involves an accident scene with carplate numbers.
+
 ---
 
 ## Conclusion
