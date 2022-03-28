@@ -27,7 +27,7 @@ Traffic signs classification & localization is a topic where automotive deployed
     4. Speed signs - Speed limits <br>
     etc. <br>
     
-<img src="./imgs/classlocalize/63_63.png" width=400 height=400 /> <br>
+<img src="./imgs/first.png" width=400 height=400 /> <br>
 <i> Figure 1: Example of object classification and Localization </i>
 
 In this capstone project, the foundation of object classification and object localization will be explored. At the end of the project: <br>
