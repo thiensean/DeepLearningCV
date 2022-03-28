@@ -54,7 +54,7 @@ R-CNN is significantly slower than Fast R-CNN with a higher training time as thi
 
 It takes a great amount of time to return an image localization vertices due to its architecture of: <br> Region proposal regeneration -> Feature extraction -> Classification.
 
-<img src="./imgs/models/regionproposal.jpg" width=300 height=300 align='left'/> <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<img src="./imgs/models/regionproposal.JPG" width=300 height=300 align='left'/> <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <i> Figure 2: Region Proposal [3][14]</i>
 
 Every warped region proposal has to be evaluated with ConvNet and this takes up computational power. [14] <br>
@@ -85,13 +85,13 @@ There are no labels in the images in the dataset and the images have to be prepa
 
 LabelImg is a great software authored by: tzutalin [15] and it helps with labeling the image quickly by allowing user to draw bounding boxes and write bounding box vertices to an XML file in PascalVOC format so it can be parsed afterwards.
 
-<img src="./imgs/labelimg.jpg" width=500 height=500 /> <br>
+<img src="./imgs/labelimg.JPG" width=500 height=500 /> <br>
 <i> Figure 5: LabelImg [3]</i>
 
 
 It gives class, coordinates and file path upon saving.
 
-<img src="./imgs/labelimg2.jpg" width=500 height=500 /> <br>
+<img src="./imgs/labelimg2.JPG" width=500 height=500 /> <br>
 <i> Figure 6: LabelImg Bounding Box vertices on XML [3]</i>
 
 ### Modelling
@@ -180,14 +180,14 @@ These 2 metrics will substantiate the classification by telling us the precision
 
 Intersection over Union (IoU) or 'Jaccard Distance' is a good measure of the accuracy of the regression. [b]
 
-<img src="./imgs/IOU1.jpg" width=280 height=280 align='left' /> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<img src="./imgs/IOU1.JPG" width=280 height=280 align='left' /> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <i> Figure 13: IOU metric [b] </i>
 
 #### Results of Classification
 
 Classification results had an average precision score of <b>0.97</b>.
 
-<img src="./imgs/precision.jpg" width=450 height=450 /> <br>
+<img src="./imgs/precision.JPG" width=450 height=450 /> <br>
 <i> Figure 14: Results of Classification [b] </i>
 
 #### Results of object localization
@@ -222,14 +222,14 @@ The rendering of the bounding boxes would be performed on the local machine.
 
 The file to serve the API was saved as 'serve.py' inside the working folder.
 
-<img src="./imgs/api.jpg" width=500 height=500 /> <br>
+<img src="./imgs/api.JPG" width=500 height=500 /> <br>
 <i> Figure 21: API structure </i>
 
 ### Sample Software
 
 This sample software was created using visual studio.
 
-<img src="./imgs/streamviewer.jpg" width=750 height=750 /> <br>
+<img src="./imgs/streamviewer.JPG" width=750 height=750 /> <br>
 <i> Figure 22: Sample software </i>
 
 ## Object Tracking
@@ -245,7 +245,7 @@ A threshold of 20 pixels were set so that if the object detection from the previ
 
 Below are a sample of the results:
 
-<img src="./imgs/opencvdnn.jpg" width=750 height=750 /> <br>
+<img src="./imgs/opencvdnn.JPG" width=750 height=750 /> <br>
 <i> Figure 23: Trajectory tracking using yoloV4 with OpenCV </i>
 
 This is a work in progress and might work better using image segmentation techniques. [17]
