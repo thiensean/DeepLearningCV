@@ -234,7 +234,7 @@ This sample software was created using visual studio.
 
 ## Object Tracking
 
-With the knowledge that YOLO has the fastest detection and the highest frame rate, yoloV4 weights will be used for object tracking in video.
+With the knowledge that YOLO has the fastest detection and the highest frame rate, yoloV4 weights was used for object tracking in video.
 Using yoloV4 weights, the weights were input onto OpenCV with DNN module to attempt to get the highest frame rate so that object trajectory can be coded.
 
 Using yoloV4 object detection, the coordinates of the center of each bounding box can be tracked. Each object detected was given an object ID.
@@ -268,6 +268,8 @@ Architectures like Single Shot Detectors will be the next topic to research on a
 It might be a good idea to replace the base layer with a pretrained model like mobilenetV3 or VGG16.
 
 By making use of a pretrained model, it could improve results and reduce overfitting.
+
+The image dataset could also be more zoomed out so that the model is able to see higher variations of the image compared to zoomed in images.
 
 ---
 
