@@ -11,7 +11,7 @@ Fatalities caused by driving a car is statistically higher than flying, with mor
 
 The automotive industry have been making significant advances that have been both impactful and significant to reducing accidents. With advances in deep learning in computer vision, LiDAR sensors, ToF cameras, the industry was able to move towards implementing advanced driver assistance as a precursor to fully self driving vehicles.
 
-Deployment of computer vision in automotive vehicles have a set of unique requirements. They are required to 'see' like humans, classify pedestrians, street signs, vehicles, road hazards and localize these objects in their field of view. A further set of requirements like LiDAR and stereo cameras add a 3rd layer of 3D depth to the vast sensing arrays deployed in automotive vehicles.
+Deployment of computer vision in automotive vehicles have a set of unique requirements. They are required to 'see' like humans, classify pedestrians, street signs, vehicles, road hazards and localize these objects in their field of view. A further set of sensors like LiDAR and stereo cameras add a 3rd layer of 3D depth to the vast sensing arrays deployed in automotive vehicles.
 
 Hence, advancements in deep learning in Computer Vision (CV) plays a huge role in advancing automotive safety. There are 3 topics involved (and more that were not researched heavily in this capstone): <br>
     1. Object classification <br>
