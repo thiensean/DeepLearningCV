@@ -1,4 +1,5 @@
 # Concepts of Advanced Driving Assistance System
+#### Deep Learning in Computer Vision / CNN / Image Classification / Object Localization / Faster R-CNN / Tensorflow Keras / GradCAM / API
 ---
 
 ### Lim Thien Sean
@@ -256,7 +257,7 @@ The video will not be included as it involves an accident scene with carplate nu
 
 ## Conclusion
 
-In conclusion, from this capstone, it can be seen that the objectives intended were achieved.
+In conclusion, from this project, it can be seen that the objectives intended were achieved.
 The model was built without using transfer learning from pretrained models. And this solidified the foundation of understanding the architecture of Faster R-CNN models.
 
 This may not be the best method, but it is highly adaptable and can be tuned to different sets of images by using libraries like Grad-CAM to understand what each convolution layer sees eg. Lines, Contours, Edges.
