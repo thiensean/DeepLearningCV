@@ -44,7 +44,7 @@ The dataset was obtained from 2 sources, 1 of which was from an online source wi
 
 Object localization was a task with different solutions. A few solutions were researched to accomplish object localization:
 
-1. Fast R-CNN
+1. Faster R-CNN
 2. R-CNN
 3. Single Shot Detector (SSD)
 4. YOLO (You Only Look Once)
