@@ -329,7 +329,7 @@ Vedantam · Devi Parikh · Dhruv Batra
 Dataset: 
 There is no intention of copyright infringement, all images are for education & research purposes with no intention for commercial deployment.
 
-1. https://github.com/eugeneyan84/Classification-and-Detection-of-Singapore-Road-Traffic-Signs
+1. https://github.com/eugeneyan84
 2. Google Street View
 3. Taken with mobile phone
 
