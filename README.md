@@ -44,7 +44,7 @@ The dataset was obtained from 2 sources, 1 of which was from an online source wi
 
 Object localization was a task with different solutions. A few solutions were researched to accomplish object localization:
 
-1. Faster R-CNN
+1. Fast R-CNN
 2. R-CNN
 3. Single Shot Detector (SSD)
 4. YOLO (You Only Look Once)
@@ -71,12 +71,12 @@ It uses a CNN to extract feature maps from the image and in parallel, it tries t
 
 Owing to the architecture, the features map had already been completed in the first step (CNN) and region proposals can now be mapped to the features map.
 
-Faster R-CNN has an ROI pooling layer where there will be class scores for each region proposal. convNet, when comparing to R-CNN is only run once on an image hence it is much faster than R-CNN. <br>
+Fast R-CNN has an ROI pooling layer where there will be class scores for each region proposal. convNet, when comparing to R-CNN is only run once on an image hence it is much faster than R-CNN. <br>
 
 <img src="./imgs/models/frcnn.png" width=800 height=520 /> <br>
-<i> Figure 4: Faster R-CNN architecture [3]</i>
+<i> Figure 4: Fast R-CNN architecture [3]</i>
 
-Hence, Faster R-CNN network will be evaluated in this project and built from ground up. <br>
+Hence, Fast R-CNN network will be evaluated in this project and built from ground up. <br>
 
 ---
 
@@ -138,7 +138,7 @@ The activation functions were different for classification branch and the locali
 'Sigmoid' was used for bounding box regression.
 
 <img src="./imgs/models/Functional2.JPG" width=1100 height=550 /> <br>
-Figure 8: Functional Model with Faster R-CNN architecture
+Figure 8: Functional Model with Fast R-CNN architecture
 
 ---
 #### GradCAM
