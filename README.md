@@ -9,7 +9,7 @@
 
 Introduction to ADAS:
 
-<img src="./imgs/advancedadas.jpg" width=800 height=350 /> <br>
+<img src="./imgs/advancedadas.jpg" width=800 height=370 /> <br>
 <i> Figure 1: Actual ADAS [18] </i>
 
 Fatalities caused by driving a car is statistically higher than flying, with more than 5 million accidents on the road compared to flying [1].
