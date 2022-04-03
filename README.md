@@ -7,6 +7,10 @@
 
 ## Executive Summary
 
+Introduction to ADAS:
+
+<img src="./imgs/models/advancedadas.jpg" width=800 height=350 /> <br>
+<i> Figure 1: Comparison Between Models </i>
 
 Fatalities caused by driving a car is statistically higher than flying, with more than 5 million accidents on the road compared to flying [1].
 
@@ -29,7 +33,7 @@ Traffic signs classification & localization is a topic where automotive deployed
     etc. <br>
     
 <img src="./imgs/classlocalize/63_63.png" width=600 height=400 /> <br>
-<i> Figure 1: Example of object classification and Localization </i>
+<i> Figure 2: Example of object classification and Localization </i>
 
 In this capstone project, the foundation of object classification and object localization will be explored. At the end of the project: <br>
     1. The model should be able to classify the image <br>
@@ -56,12 +60,12 @@ R-CNN is significantly slower than Fast R-CNN with a higher training time as thi
 It takes a great amount of time to return an image localization vertices due to its architecture of: <br> Region proposal regeneration -> Feature extraction -> Classification.
 
 <img src="./imgs/models/regionproposal.JPG" width=330 height=300 align='left'/> <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<i> Figure 2: Region Proposal [3][14]</i>
+<i> Figure 3: Region Proposal [3][14]</i>
 
 Every warped region proposal has to be evaluated with ConvNet and this takes up computational power. [14] <br>
 
 <img src="./imgs/models/comparisonmodels.png" width=800 height=350 /> <br>
-<i> Figure 3: Comparison Between Models </i>
+<i> Figure 4: Comparison Between Models </i>
 
 #### Faster R-CNN
 
@@ -74,7 +78,7 @@ Owing to the architecture, the features map had already been completed in the fi
 Fast R-CNN has an ROI pooling layer where there will be class scores for each region proposal. convNet, when comparing to R-CNN is only run once on an image hence it is much faster than R-CNN. <br>
 
 <img src="./imgs/models/frcnn.png" width=800 height=520 /> <br>
-<i> Figure 4: Fast R-CNN architecture [3]</i>
+<i> Figure 5: Fast R-CNN architecture [3]</i>
 
 Hence, Fast R-CNN network will be evaluated in this project and built from ground up. <br>
 
@@ -87,13 +91,13 @@ There are no labels in the images in the dataset and the images have to be prepa
 LabelImg is a great software authored by: tzutalin [15] and it helps with labeling the image quickly by allowing user to draw bounding boxes and write bounding box vertices to an XML file in PascalVOC format so it can be parsed afterwards.
 
 <img src="./imgs/labelimg.JPG" width=500 height=400 /> <br>
-<i> Figure 5: LabelImg [3]</i>
+<i> Figure 6: LabelImg [3]</i>
 
 
 It gives class, coordinates and file path upon saving.
 
 <img src="./imgs/labelimg2.JPG" width=500 height=470 /> <br>
-<i> Figure 6: LabelImg Bounding Box vertices on XML [3]</i>
+<i> Figure 7: LabelImg Bounding Box vertices on XML [3]</i>
 
 ### Modelling
 
@@ -118,7 +122,7 @@ Dropout was added to prevent the model from becoming weight dependent by randoml
 The activation function used for classification was 'Softmax' which will assign class probabilities to each class. [11]
 
 <img src="./imgs/models/sequential.JPG" width=900 height=550 /> <br>
-<i> Figure 7: Sequential Model </i>
+<i> Figure 8: Sequential Model </i>
 
 ---
 #### Functional Model
@@ -138,7 +142,7 @@ The activation functions were different for classification branch and the locali
 'Sigmoid' was used for bounding box regression.
 
 <img src="./imgs/models/Functional2.JPG" width=1100 height=550 /> <br>
-Figure 8: Functional Model with Fast R-CNN architecture
+Figure 9: Functional Model with Fast R-CNN architecture
 
 ---
 #### GradCAM
@@ -155,22 +159,22 @@ From the images as follows: We can see how certain features are localized and em
 In this example and in similar images, the model recognizes the 2 arrows.
 
 <img src="./imgs/arrow1.png" width=200 height=200 align='left'/> <br><br><br><br><br><br><br><br><br><br>
-<i> Figure 9: GradCAM 1 </i>
+<i> Figure 10: GradCAM 1 </i>
 
 In this example and in similar images, the model recognizes the line across the image.
 
 <img src="./imgs/gradcammask1.png" width=200 height=200 align='left'/> <br><br><br><br><br><br><br><br><br><br>
-<i> Figure 10: GradCAM 2 </i>
+<i> Figure 11: GradCAM 2 </i>
 
 In this example and in similar images, the model managed to localize and recognize the circle and its features.
 
 <img src="./imgs/gradcammask2.png" width=200 height=200 align='left'/> <br><br><br><br><br><br><br><br><br><br>
-<i> Figure 11: GradCAM 3 </i>
+<i> Figure 12: GradCAM 3 </i>
 
 In this example and in similar images, the model recognizes and emphasizes the half split characteristics of this sign.
 
 <img src="./imgs/gradcammask7.png" width=200 height=200 align='left'/> <br><br><br><br><br><br><br><br><br><br>
-<i> Figure 12: GradCAM 4 </i>
+<i> Figure 13: GradCAM 4 </i>
 
 ### Metric
 
@@ -182,14 +186,14 @@ These 2 metrics will substantiate the classification by telling us the precision
 Intersection over Union (IoU) or 'Jaccard Distance' is a good measure of the accuracy of the regression. [b]
 
 <img src="./imgs/IOU1.JPG" width=280 height=280 align='left' /> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<i> Figure 13: IOU metric [b] </i>
+<i> Figure 14: IOU metric [b] </i>
 
 #### Results of Classification
 
 Classification results had an average precision score of <b>0.97</b>.
 
 <img src="./imgs/precision.JPG" width=450 height=800 /> <br>
-<i> Figure 14: Results of Classification [b] </i>
+<i> Figure 15: Results of Classification [b] </i>
 
 #### Results of object localization
 
@@ -198,22 +202,22 @@ Average results of IOU is <b>0.88</b>.
 Below are samples of the images that were both classified and localized.
 
 <img src="./imgs/classlocalize/10_10.png" width=500 height=350 /> <br>
-<i> Figure 15: Image localization IOU results </i>
-
-<img src="./imgs/classlocalize/12_12.png" width=500 height=350 /> <br>
 <i> Figure 16: Image localization IOU results </i>
 
-<img src="./imgs/classlocalize/55_55.png" width=500 height=350 /> <br>
+<img src="./imgs/classlocalize/12_12.png" width=500 height=350 /> <br>
 <i> Figure 17: Image localization IOU results </i>
 
-<img src="./imgs/classlocalize/78_78.png" width=500 height=350 /> <br>
+<img src="./imgs/classlocalize/55_55.png" width=500 height=350 /> <br>
 <i> Figure 18: Image localization IOU results </i>
 
-<img src="./imgs/classlocalize/62_62.png" width=500 height=350 /> <br>
+<img src="./imgs/classlocalize/78_78.png" width=500 height=350 /> <br>
 <i> Figure 19: Image localization IOU results </i>
 
-<img src="./imgs/classlocalize/70_70.png" width=500 height=350 /> <br>
+<img src="./imgs/classlocalize/62_62.png" width=500 height=350 /> <br>
 <i> Figure 20: Image localization IOU results </i>
+
+<img src="./imgs/classlocalize/70_70.png" width=500 height=350 /> <br>
+<i> Figure 21: Image localization IOU results </i>
 
 ### Flask API
 
@@ -224,14 +228,14 @@ The rendering of the bounding boxes would be performed on the local machine.
 The file to serve the API was saved as 'serve.py' inside the working folder.
 
 <img src="./imgs/api.JPG" width=950 height=500 /> <br>
-<i> Figure 21: API structure </i>
+<i> Figure 22: API structure </i>
 
 ### Sample Software
 
 This sample software was created using visual studio.
 
 <img src="./imgs/streamviewer.JPG" width=750 height=600 /> <br>
-<i> Figure 22: Sample software </i>
+<i> Figure 23: Sample software </i>
 
 ## Object Tracking
 
@@ -247,7 +251,7 @@ A threshold of 20 pixels were set so that if the object detection from the previ
 Below are a sample of the results:
 
 <img src="./imgs/opencvdnn.JPG" width=1150 height=750 /> <br>
-<i> Figure 23: Trajectory tracking using yoloV4 with OpenCV </i>
+<i> Figure 24: Trajectory tracking using yoloV4 with OpenCV </i>
 
 This is a work in progress and might work better using image segmentation techniques. [17]
 
