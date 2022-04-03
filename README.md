@@ -9,8 +9,8 @@
 
 Introduction to ADAS:
 
-<img src="./imgs/models/advancedadas.jpg" width=800 height=350 /> <br>
-<i> Figure 1: Comparison Between Models </i>
+<img src="./imgs/advancedadas.jpg" width=800 height=350 /> <br>
+<i> Figure 1: Actual ADAS [18] </i>
 
 Fatalities caused by driving a car is statistically higher than flying, with more than 5 million accidents on the road compared to flying [1].
 
@@ -313,6 +313,8 @@ The image dataset could also be more zoomed out so that the model is able to see
 [16] https://towardsdatascience.com/what-is-the-difference-between-object-detection-and-image-segmentation-ee746a935cc1
 
 [17] https://www.researchgate.net/figure/Object-tracking-based-on-image-segmentation-and-similar-object-feature-matching_fig1_4222458
+
+[18] https://m.futurecar.com/4632/Computer-Vision-Developer-StradVision-to-Showcase-its-Most-Advanced-Perception-Camera-for-Autonomous-Driving-&amp;-ADAS-at-Auto-Tech-2021
 
 ---
 
