@@ -3,7 +3,7 @@
 ---
 
 ### Lim Thien Sean
-#### DSIF3
+#### General Assembly - DSIF3
 
 ## Executive Summary
 
