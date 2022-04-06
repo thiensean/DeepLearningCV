@@ -1,5 +1,5 @@
 # Concepts of Advanced Driving Assistance System
-#### Deep Learning in Computer Vision / CNN / Image Classification / Object Localization / Faster R-CNN / Tensorflow Keras / GradCAM / API
+#### Deep Learning in Computer Vision / CNN / Image Classification & Localization / Fast R-CNN / Tensorflow Keras / GradCAM / Flask API / Streamlit
 ---
 
 ### Lim Thien Sean
