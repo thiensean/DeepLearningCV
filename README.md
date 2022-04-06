@@ -3,7 +3,6 @@
 ---
 
 ### Lim Thien Sean
-### General Assembly - DSIF3
 
 ## Executive Summary
 
@@ -277,6 +276,10 @@ By making use of a pretrained model, it could improve results and reduce overfit
 The image dataset could also be more zoomed out so that the model is able to see higher variations of the image compared to zoomed in images.
 
 ---
+
+## Ongoing Project
+
+Next step in the research and development work will be to improve this model and to use Mask R-CNN to include image segmentation.
 
 ## Sources: 
 
