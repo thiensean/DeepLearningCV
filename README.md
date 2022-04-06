@@ -67,9 +67,9 @@ Every warped region proposal has to be evaluated with ConvNet and this takes up 
 <img src="./imgs/models/comparisonmodels.png" width=800 height=350 /> <br>
 <i> Figure 4: Comparison Between Models </i>
 
-#### Faster R-CNN
+#### Fast R-CNN
 
-Faster R-CNN works with an architecture of region proposal network.
+Fast R-CNN works with an architecture of region proposal network.
 
 It uses a CNN to extract feature maps from the image and in parallel, it tries to find region proposals.
 
@@ -230,12 +230,12 @@ The file to serve the API was saved as 'serve.py' inside the working folder.
 <img src="./imgs/api.JPG" width=950 height=500 /> <br>
 <i> Figure 22: API structure </i>
 
-### Sample Software
+### Simple web deployment
 
-This sample software was created using visual studio.
+The model was deployed as a simple web app in Streamlit.
 
-<img src="./imgs/streamviewer.JPG" width=750 height=600 /> <br>
-<i> Figure 23: Sample software </i>
+<img src="./imgs/streamlit.gif" width=1100 height=600 /> <br>
+<i> Figure 23: Simple web app using Streamlit to demonstrate model deployment </i>
 
 ## Object Tracking
 
