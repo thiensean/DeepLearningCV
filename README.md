@@ -151,7 +151,7 @@ Gradient-weighted Class Activation Mapping (Grad-CAM) emphasizes image using the
 
 Using the gradients or the model loss, we can tell how the characteristics of the image are emphasized through the creation of heatmaps. [13]
 
-In this capstone project, the concept of Grad-CAM was applied to certain classification images.
+In this project, the concept of Grad-CAM was applied to certain classification images.
 
 From the images as follows: We can see how certain features are localized and emphasized.
 
