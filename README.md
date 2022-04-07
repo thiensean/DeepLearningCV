@@ -246,7 +246,7 @@ Using yoloV4 object detection, the coordinates of the center of each bounding bo
 
 By tracking the location of one frame to the next frame, the trajectory of the object can be tracked so each object in the frame has its own unique ID.
 
-A threshold of 20 pixels were set so that if the object detection from the previous to the next frame exceed 20 pixels, the object would be popped.
+A threshold of 30 pixels were set so that if the object detection from the previous to the next frame exceed 30 pixels, the object would be popped.
 
 Below are a sample of the results:
 
