@@ -283,7 +283,9 @@ The image dataset could also be more zoomed out so that the model is able to see
 
 Next step in the research and development work will be to improve this model and to use Mask R-CNN to include image segmentation.
 
-Task: Mask R-CNN by expanding on the current Functional API model architecture.
+Task 1: Mask R-CNN by expanding on the current Functional API model architecture.
+Task 2: Single Shot Detectors
+Task 3: YOLO on custom dataset
 
 
 ## Sources: 
