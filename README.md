@@ -270,7 +270,7 @@ Architectures like Single Shot Detectors will be the next topic to research on a
 
 #### Room for improvements
 
-It might be a good idea to replace the base layer with a pretrained model like mobilenetV3 or VGG16.
+It might be a good idea to replace the base layer with a pretrained model like mobilenetV3 / EfficientNet / VGG16.
 
 By making use of a pretrained model, it could improve results and reduce overfitting.
 
@@ -281,6 +281,9 @@ The image dataset could also be more zoomed out so that the model is able to see
 ## Ongoing Project
 
 Next step in the research and development work will be to improve this model and to use Mask R-CNN to include image segmentation.
+
+Task: Mask R-CNN by expanding on the current Functional API model architecture.
+
 
 ## Sources: 
 
