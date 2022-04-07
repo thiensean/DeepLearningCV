@@ -255,7 +255,8 @@ Below are a sample of the results:
 
 This is a work in progress and might work better using image segmentation techniques. [17]
 
-The video will not be included as it involves an accident scene with carplate numbers.
+<img src="./imgs/trajectorytracking.gif" width=500 height=340 /> <br>
+<i> Figure 25: Trimmed video with carplates censored. [18] </i>
 
 ---
 
