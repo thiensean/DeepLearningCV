@@ -145,10 +145,7 @@ The activation functions were different for classification branch and the locali
 Figure 9: Functional Model with Fast R-CNN architecture <br><br><br>
 
 <img src="./imgs/models/model.png" width=350 height=1100 /> <br>
-Figure 9-1: Visualizing Functional API model connections & output shape <br><br><br>
-
-<img src="./imgs/models/model1.png" width=1100 height=230 /> <br>
-Figure 9-2: Visualization of Model Architecture
+Figure 9-1: Visualizing Functional API model connections & output shape <br>
 
 ---
 #### GradCAM
