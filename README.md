@@ -298,9 +298,9 @@ Matterport's Mask-RCNN has some differences from the official paper, it resizes 
 
 Mask-RCNN has a region proposal network that simultaneously predicts object bounds and objectness scores at different positions of the image. It also includes a Non-Maximum Suppression (NMS) post processing step for collapsing the ROI's into the smallest box that encapsulates the pixels of the object, using confidence intervals that are above threshold setup during initial configuration stage. [19]
 
-In this project, the setup is as follows:
-DETECTION_MIN_CONFIDENCE       0.9
-DETECTION_NMS_THRESHOLD        0.3
+In this project, the setup is as follows: <br>
+DETECTION_MIN_CONFIDENCE       0.9 <br>
+DETECTION_NMS_THRESHOLD        0.3 <br><br>
 
 The masks over the objects were annotated manually using "makesense.ai" [20] using polygons saved in JSON format.
 
