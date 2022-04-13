@@ -282,7 +282,7 @@ The image dataset could also be more zoomed out so that the model is able to see
 
 ---
 
-# Part 2 - Mask-RCNN
+# Part 2 - Mask R-CNN for Traffic Objects
 
 ## Mask R-CNN
 
@@ -316,7 +316,7 @@ The masks over the objects were annotated manually using "makesense.ai" [20] usi
 
 ---
 
-Mask-RCNN annotations and development ongoing..
+Mask R-CNN annotations and development ongoing..
 
 ## Ongoing Project
 
