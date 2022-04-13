@@ -286,24 +286,24 @@ The image dataset could also be more zoomed out so that the model is able to see
 
 ## Mask R-CNN
 
-Mask R-CNN is planned for implementation in this project. The Mask-RCNN architecture used was cloned from Matterport's Github.
+Mask R-CNN is planned for implementation in this project. The Mask R-CNN architecture used was cloned from Matterport's Github.
 https://github.com/matterport/Mask_RCNN
 
 Mask R-CNN is a state-of-the-art model used for image segmentation, with runner-up followed closely by researches on transformers with Computer Vision, eg. Mask-Former.
 
-The architecture of Mask-RCNN builds upon Faster-RCNN, hence follows a region based convolutional network that returns bounding box and its class label with confidence score. Mask-RCNN will be used to classify, localize and mask the traffic objects in this project.
+The architecture of Mask R-CNN builds upon Faster-RCNN, hence follows a region based convolutional network that returns bounding box and its class label with confidence score. Mask R-CNN will be used to classify, localize and mask the traffic objects in this project.
 
-The Mask-RCNN to be used for this project has a backbone using ResNet101 [h] that uses a residual network that network architect use to allow deep neural networks without facing gradient instability or exploding/vanishing gradients.
+The Mask R-CNN to be used for this project has a backbone using ResNet101 [h] that uses a residual network that network architect use to allow deep neural networks without facing gradient instability or exploding/vanishing gradients.
 
 Deeper neural networks using residual networks with a higher depth was proven to demonstrate higher accuracy in the paper "Deep Residual Learning for Image Recognition". [h]
 A possible improvement to this project can be replacing the backbone from ResNet101 to ResNet152 that is substantially deeper.
 
 <img src="./imgs/mask-rcnn-architecture.png" width=1150 height=450 /> <br>
-<i> Figure 26: Mask RCNN architecture [g] </i>
+<i> Figure 26: Mask R-CNN architecture [g] </i>
 
 Matterport's Mask-RCNN has some differences from the official paper, it resizes but keeps the original image aspect ratio by padding the image. [19]
 
-Mask-RCNN has a region proposal network that simultaneously predicts object bounds and objectness scores at different positions of the image. It also includes a Non-Maximum Suppression (NMS) post processing step for collapsing the ROI's into the smallest box that encapsulates the pixels of the object, using confidence intervals that are above threshold setup during initial configuration stage. [19]
+Mask R-CNN has a region proposal network that simultaneously predicts object bounds and objectness scores at different positions of the image. It also includes a Non-Maximum Suppression (NMS) post processing step for collapsing the ROI's into the smallest box that encapsulates the pixels of the object, using confidence intervals that are above threshold setup during initial configuration stage. [19]
 
 In this project, the setup is as follows: <br>
 DETECTION_MIN_CONFIDENCE       0.9 <br>
