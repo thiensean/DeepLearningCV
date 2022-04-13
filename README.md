@@ -293,6 +293,11 @@ Mask R-CNN is a state-of-the-art model used for image segmentation followed clos
 
 The architecture of Mask-RCNN builds upon Faster-RCNN, hence follows a region based convolutional network that returns bounding box and its class label with confidence score. Mask-RCNN will be used to classify, localize and mask the traffic objects in this project.
 
+The Mask-RCNN to be used for this project has a backbone using ResNet101 [h] that uses a residual network that network architect use to allow deep neural networks without facing gradient instability or exploding/vanishing gradients.
+
+Deeper neural networks using residual networks with a higher depth was proven to demonstrate higher accuracy in the paper "Deep Residual Learning for Image Recognition". [h]
+A possible improvement to this project can be replacing the backbone from ResNet101 to ResNet152 that is substantially deeper.
+
 <img src="./imgs/mask-rcnn-architecture.png" width=1150 height=450 /> <br>
 <i> Figure 26: Mask RCNN architecture [g] </i>
 
@@ -380,6 +385,8 @@ Vedantam · Devi Parikh · Dhruv Batra
 [f] Stereo RCNN based 3D Object Detection for Autonomous Driving, https://github.com/srinu6/Stereo-3D-Object-Detection-for-Autonomous-Driving
 
 [g] An automatic nuclei segmentation method based on deep convolutional neural networks for histopathology images - Scientific Figure on ResearchGate. Available from: https://www.researchgate.net/figure/The-overall-network-architecture-of-Mask-R-CNN_fig1_336615317 [accessed 13 Apr, 2022]
+
+[h] Deep Residual Learning for Image Recognition, Authors: Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun
 
 ---
 
