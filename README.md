@@ -302,9 +302,12 @@ Mask-RCNN has a region proposal network that simultaneously predicts object boun
 
 In this project, the setup is as follows: <br>
 DETECTION_MIN_CONFIDENCE       0.9 <br>
-DETECTION_NMS_THRESHOLD        0.3 <br><br>
+DETECTION_NMS_THRESHOLD        0.3 <br>
 
 The masks over the objects were annotated manually using "makesense.ai" [20] using polygons saved in JSON format.
+
+<img src="./imgs/cars1.JPG" width=1150 height=720 /> <br>
+<i> Figure 27: "Cars" Class Mask Annotation </i>
 
 ---
 
