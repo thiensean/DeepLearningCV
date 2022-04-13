@@ -263,7 +263,7 @@ This is a work in progress and might work better using image segmentation techni
 
 ---
 
-## Conclusion
+## Part 1 - Conclusion
 
 In conclusion, from this project, it can be seen that the objectives intended were achieved.
 The model was built without using transfer learning from pretrained models. And this solidified the foundation of understanding the architecture of Faster R-CNN models.
@@ -281,6 +281,8 @@ By making use of a pretrained model, it could improve results and reduce overfit
 The image dataset could also be more zoomed out so that the model is able to see higher variations of the image compared to zoomed in images.
 
 ---
+
+# Part 2 - Mask-RCNN
 
 ## Mask R-CNN
 
