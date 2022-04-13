@@ -282,6 +282,32 @@ The image dataset could also be more zoomed out so that the model is able to see
 
 ---
 
+## Mask R-CNN
+
+Mask R-CNN is planned for implementation in this project. The Mask-RCNN architecture used was cloned from Matterport's Github.
+https://github.com/matterport/Mask_RCNN
+
+Mask R-CNN is a state-of-the-art model used for image segmentation followed closely by researches on transformers with Computer Vision, eg. Mask-Former.
+
+The architecture of Mask-RCNN builds upon Faster-RCNN, hence follows a region based convolutional network that returns bounding box and its class label with confidence score. Mask-RCNN will be used to classify, localize and mask the traffic objects in this project.
+
+<img src="./imgs/mask-rcnn-architecture.png" width=1150 height=450 /> <br>
+<i> Figure 26: Mask RCNN architecture [g] </i>
+
+Matterport's Mask-RCNN has some differences from the official paper, it resizes but keeps the original image aspect ratio by padding the image. [19]
+
+Mask-RCNN has a region proposal network that simultaneously predicts object bounds and objectness scores at different positions of the image. It also includes a Non-Maximum Suppression (NMS) post processing step for collapsing the ROI's into the smallest box that encapsulates the pixels of the object, using confidence intervals that are above threshold setup during initial configuration stage. [19]
+
+In this project, the setup is as follows:
+DETECTION_MIN_CONFIDENCE       0.9
+DETECTION_NMS_THRESHOLD        0.3
+
+The masks over the objects were annotated manually using "makesense.ai" [20] using polygons saved in JSON format.
+
+---
+
+Mask-RCNN annotations and development ongoing..
+
 ## Ongoing Project
 
 Next step in the research and development work will be to improve this model and to use Mask R-CNN to include image segmentation.
@@ -329,6 +355,10 @@ Task 3: YOLO on custom dataset <br>
 
 [18] https://m.futurecar.com/4632/Computer-Vision-Developer-StradVision-to-Showcase-its-Most-Advanced-Perception-Camera-for-Autonomous-Driving-&amp;-ADAS-at-Auto-Tech-2021
 
+[19] https://github.com/matterport/Mask_RCNN
+
+[20] https://www.makesense.ai/
+
 ---
 
 [a] Research papers and materials: With great thanks to the following authors for sharing their research papers and materials on the topic of object classification and localization.
@@ -343,6 +373,8 @@ Task 3: YOLO on custom dataset <br>
 Vedantam · Devi Parikh · Dhruv Batra
 
 [f] Stereo RCNN based 3D Object Detection for Autonomous Driving, https://github.com/srinu6/Stereo-3D-Object-Detection-for-Autonomous-Driving
+
+[g] An automatic nuclei segmentation method based on deep convolutional neural networks for histopathology images - Scientific Figure on ResearchGate. Available from: https://www.researchgate.net/figure/The-overall-network-architecture-of-Mask-R-CNN_fig1_336615317 [accessed 13 Apr, 2022]
 
 ---
 
