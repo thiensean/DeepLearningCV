@@ -1,9 +1,13 @@
 # Concepts of Advanced Driving Assistance System
-#### Deep Learning in Computer Vision / CNN / Image Classification / Object Localization / Fast R-CNN / Tensorflow Keras / GradCAM / Tensorflow Functional API / Flask API / Streamlit
+#### Deep Learning in Computer Vision / CNN / Image Classification / Object Localization / Mask R-CNN / Fast R-CNN / Tensorflow Keras / GradCAM / Tensorflow Functional API / Flask API / Streamlit
 ---
 
 ### Lim Thien Sean
-#### General Assembly - DSIF3
+General Assembly - DSIF3
+
+Industry Mentors:
+Marie Stephen Leo - https://stephen-leo.medium.com/
+Shilpa Sindhe - https://shilpa-leo.medium.com/
 
 ## Executive Summary
 
