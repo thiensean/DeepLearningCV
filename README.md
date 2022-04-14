@@ -327,6 +327,7 @@ Next step in the research and development work will be to improve this model and
 Task 1: Mask R-CNN by expanding on the current Functional API model architecture. <br>
 Task 2: Single Shot Detectors <br>
 Task 3: YOLO on custom dataset <br>
+Task 4: Stereo Camera CV
 
 
 ## Sources: 
