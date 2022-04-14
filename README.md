@@ -39,7 +39,7 @@ Traffic signs classification & localization is a topic where automotive deployed
 <img src="./imgs/classlocalize/63_63.png" width=600 height=400 /> <br>
 <i> Figure 2: Example of object classification and Localization </i>
 
-In this capstone project, the foundation of object classification and object localization will be explored. At the end of the project: <br>
+In part 1 of this project, the foundation of object classification and object localization will be explored. At the end of Part 1 of this project: <br>
     1. The model should be able to classify the image <br>
     2. The model should be able to localize the object <br>
     3. YOLOv4 which is a fast implementation of object classification & detection with a high frame rate will be tested on OpenCV, trajectory tracking will be used to link up object localization with object tracking. <br><br>
@@ -247,9 +247,9 @@ The model was deployed as a simple web app in Streamlit.
 ## Object Tracking
 
 With the knowledge that YOLO has the fastest detection and the highest frame rate, yoloV4 weights was used for object tracking in video.
-Using yoloV4 weights, the weights were input onto OpenCV with DNN module to attempt to get the highest frame rate so that object trajectory can be coded.
+Using YOLOv4 weights, the weights were input onto OpenCV with DNN module to attempt to get the highest frame rate so that object trajectory can be coded.
 
-Using yoloV4 object detection, the coordinates of the center of each bounding box can be tracked. Each object detected was given an object ID.
+Using YOLOv4 object detection, the coordinates of the center of each bounding box can be tracked. Each object detected was given an object ID.
 
 By tracking the location of one frame to the next frame, the trajectory of the object can be tracked so each object in the frame has its own unique ID.
 
@@ -270,15 +270,17 @@ This is a work in progress and might work better using image segmentation techni
 ## Part 1 - Conclusion
 
 In conclusion, from this project, it can be seen that the objectives intended were achieved.
-The model was built without using transfer learning from pretrained models. And this solidified the foundation of understanding the architecture of Faster R-CNN models.
+The model was built without using transfer learning from pretrained models. And this solidified the foundation of understanding the architecture of architectures similar to Fast R-CNN models.
 
 This may not be the best method, but it is highly adaptable and can be tuned to different sets of images by using libraries like Grad-CAM to understand what each convolution layer sees eg. Lines, Contours, Edges.
 
-Architectures like Single Shot Detectors will be the next topic to research on and it will solidify the aim of speed and accuracy.
+In part 2 of this project, this project will research on:
+1. Architectures like Single Shot Detectors, and it will solidify the aim of speed and accuracy.
+2. Mask R-CNN, to compare results between simple convolutional network vs deep residual neural networks like ResNet101.
 
 #### Room for improvements
 
-It might be a good idea to replace the base layer with a pretrained model like mobilenetV3 / EfficientNet / VGG16.
+It might be a good idea to replace the base layer with a pretrained model like mobilenetV3 / EfficientNet / ResNet / VGG16.
 
 By making use of a pretrained model, it could improve results and reduce overfitting.
 
