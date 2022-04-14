@@ -3,7 +3,7 @@
 ---
 
 ### Lim Thien Sean
-General Assembly - DSIF3
+General Assembly
 
 Industry Mentors: <br>
 Marie Stephen Leo - https://stephen-leo.medium.com/ <br>
