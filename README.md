@@ -5,9 +5,11 @@
 ### Lim Thien Sean
 General Assembly
 
-Industry Mentors: <br>
+#### Industry Mentors: <br>
 Marie Stephen Leo - https://stephen-leo.medium.com/ <br>
 Shilpa Sindhe - https://shilpa-leo.medium.com/ <br>
+
+---
 
 ## Executive Summary
 
