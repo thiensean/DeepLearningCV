@@ -297,7 +297,7 @@ The image dataset could also be more zoomed out so that the model is able to see
 Mask R-CNN is planned for implementation in this project. The Mask R-CNN architecture used was cloned from Matterport's Github.
 https://github.com/matterport/Mask_RCNN
 
-Mask R-CNN is a state-of-the-art model used for image segmentation, with runner-up followed closely by researches on transformers with Computer Vision, eg. Mask-Former.
+Mask R-CNN is a state-of-the-art model used for image segmentation, followed closely by new techniques on researches using transformers with Computer Vision, eg. Mask-Former.
 
 The architecture of Mask R-CNN builds upon Faster-RCNN, hence follows a region based convolutional network that returns bounding box and its class label with confidence score. Mask R-CNN will be used to classify, localize and mask the traffic objects in this project.
 
