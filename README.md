@@ -5,9 +5,9 @@
 ### Lim Thien Sean
 General Assembly - DSIF3
 
-Industry Mentors:
-Marie Stephen Leo - https://stephen-leo.medium.com/
-Shilpa Sindhe - https://shilpa-leo.medium.com/
+Industry Mentors: <br>
+Marie Stephen Leo - https://stephen-leo.medium.com/ <br>
+Shilpa Sindhe - https://shilpa-leo.medium.com/ <br>
 
 ## Executive Summary
 
