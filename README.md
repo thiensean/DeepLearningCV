@@ -328,11 +328,19 @@ The masks over the objects were annotated manually using "makesense.ai" [20] usi
 
 Mask R-CNN annotations and development ongoing..
 
+## Research into usage of standardized ArUco markers installation on vehicles for naive depth perception
+
+The author will research about the use of standardized size ArUco markers for adding another layer of depth perception.
+
+<img src="./imgs/ArUco.JPG" width=1150 height=720 /> <br>
+<i> Figure 28: Author proposed method using ArUco fiducial markers to achieve another layer of naive depth perception [i] </i>
+
 ## Ongoing Project
 
 Next step in the research and development work will be to improve this model and to use Mask R-CNN to include image segmentation.
 
-Task 1: Mask R-CNN by expanding on the current Functional API model architecture. <br>
+Task 1: Mask R-CNN by expanding on the current Functional API model architecture. -- Ongoing <br>
+<b>Task 2: Research into usage of standardized ArUco markers installation on vehicles for naive depth perception </b>
 Task 2: Single Shot Detectors <br>
 Task 3: YOLO on custom dataset <br>
 Task 4: Stereo Camera CV
@@ -398,6 +406,8 @@ Vedantam · Devi Parikh · Dhruv Batra
 [g] An automatic nuclei segmentation method based on deep convolutional neural networks for histopathology images - Scientific Figure on ResearchGate. Available from: https://www.researchgate.net/figure/The-overall-network-architecture-of-Mask-R-CNN_fig1_336615317 [accessed 13 Apr, 2022]
 
 [h] Deep Residual Learning for Image Recognition, Authors: Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun
+
+[i] Autonomous UAV with vision based on-board decision making for remote sensing and precision agriculture, Bilal H. Alsalam, Kye Morton, Duncan Andrew Campbell, Luis Felipe Gonzalez
 
 ---
 
