@@ -341,8 +341,9 @@ Next step in the research and development work will be to improve this model and
 
 Task 1: Mask R-CNN by expanding on the current Functional API model architecture. -- Ongoing <br>
 <b>Task 2: Research into usage of standardized ArUco markers installation on vehicles for naive depth perception </b><br>
-Task 3: Rain Removal based on research paper 'A Model-driven Deep Neural Network for Single Image Rain Removal' [j] <br>
-Task 4: Stereo Camera CV
+Task 3: Stereo Camera CV <br>
+Task 4: Rain Removal based on research paper 'A Model-driven Deep Neural Network for Single Image Rain Removal' [j] <br>
+
 
 
 ## Sources: 
