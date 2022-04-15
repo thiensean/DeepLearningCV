@@ -341,9 +341,8 @@ Next step in the research and development work will be to improve this model and
 
 Task 1: Mask R-CNN by expanding on the current Functional API model architecture. -- Ongoing <br>
 <b>Task 2: Research into usage of standardized ArUco markers installation on vehicles for naive depth perception </b><br>
-Task 3: Single Shot Detectors <br>
-Task 4: YOLO on custom dataset <br>
-Task 5: Stereo Camera CV
+Task 3: Rain Removal based on research paper 'A Model-driven Deep Neural Network for Single Image Rain Removal' [j] <br>
+Task 4: Stereo Camera CV
 
 
 ## Sources: 
@@ -408,6 +407,8 @@ Vedantam · Devi Parikh · Dhruv Batra
 [h] Deep Residual Learning for Image Recognition, Authors: Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun
 
 [i] Autonomous UAV with vision based on-board decision making for remote sensing and precision agriculture, Bilal H. Alsalam, Kye Morton, Duncan Andrew Campbell, Luis Felipe Gonzalez
+
+[j] A Model-driven Deep Neural Network for Single Image Rain Removal, Hong Wang, Qi Xie, Qian Zhao, Deyu Meng
 
 ---
 
