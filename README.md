@@ -328,9 +328,9 @@ The masks over the objects were annotated manually using "makesense.ai" [20] usi
 
 Mask R-CNN annotations and development ongoing..
 
-## Research into usage of standardized ArUco markers installation on vehicles for naive depth perception
+## Research into usage of standardized ArUco markers installation on vehicles for naive depth perception for various tasks
 
-The author will research about the use of standardized size ArUco markers for adding another layer of depth perception.
+The author will research about the use of standardized size ArUco markers for adding another layer of depth perception for various tasks.
 
 <img src="./imgs/ArUco.JPG" width=1150 height=720 /> <br>
 <i> Figure 28: Author proposed method using ArUco fiducial markers to achieve another layer of naive depth perception [i] </i>
