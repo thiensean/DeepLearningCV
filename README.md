@@ -340,10 +340,10 @@ The author will research about the use of standardized size ArUco markers for ad
 Next step in the research and development work will be to improve this model and to use Mask R-CNN to include image segmentation.
 
 Task 1: Mask R-CNN by expanding on the current Functional API model architecture. -- Ongoing <br>
-<b>Task 2: Research into usage of standardized ArUco markers installation on vehicles for naive depth perception </b>
-Task 2: Single Shot Detectors <br>
-Task 3: YOLO on custom dataset <br>
-Task 4: Stereo Camera CV
+<b>Task 2: Research into usage of standardized ArUco markers installation on vehicles for naive depth perception </b><br>
+Task 3: Single Shot Detectors <br>
+Task 4: YOLO on custom dataset <br>
+Task 5: Stereo Camera CV
 
 
 ## Sources: 
