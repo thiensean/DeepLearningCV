@@ -290,7 +290,7 @@ The image dataset could also be more zoomed out so that the model is able to see
 
 ---
 
-# Part 2 - Mask R-CNN with Deep Neuural Networks (ResNet)
+# Part 2 - Mask R-CNN with Deep Neural Networks (ResNet)
 
 ## Mask R-CNN
 
