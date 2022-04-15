@@ -271,7 +271,7 @@ This is a work in progress and might work better using image segmentation techni
 ## Part 1 - Conclusion
 
 In conclusion, from this project, it can be seen that the objectives intended were achieved.
-The model was built without using transfer learning from pretrained models. And this solidified the foundation of understanding the architecture of architectures similar to Fast R-CNN models.
+The model was built without using transfer learning from pretrained models. And this solidified the foundation of understanding architectures similar to Fast R-CNN models.
 
 This may not be the best method, but it is highly adaptable and can be tuned to different sets of images by using libraries like Grad-CAM to understand what each convolution layer sees eg. Lines, Contours, Edges.
 
