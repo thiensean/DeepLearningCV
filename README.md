@@ -9,6 +9,7 @@ Marie Stephen Leo - https://stephen-leo.medium.com/ <br>
 Shilpa Sindhe - https://shilpa-leo.medium.com/ <br>
 
 ---
+# Part 1 - Foundation of Classification & Localization
 
 ## Executive Summary
 
@@ -289,7 +290,7 @@ The image dataset could also be more zoomed out so that the model is able to see
 
 ---
 
-# Part 2 - Mask R-CNN for Traffic Objects
+# Part 2 - Mask R-CNN with Deep Neuural Networks (ResNet)
 
 ## Mask R-CNN
 
