@@ -445,7 +445,9 @@ Task 4: Rain Removal based on research paper 'A Model-driven Deep Neural Network
 
 [22] https://towardsdatascience.com/the-vanishing-gradient-problem-69bf08b15484
 
-[23] 
+[23] https://ai.googleblog.com/2019/05/efficientnet-improving-accuracy-and.html
+
+[24] https://towardsdatascience.com/google-releases-efficientnetv2-a-smaller-faster-and-better-efficientnet-673a77bdd43c
 
 ---
 
