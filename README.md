@@ -301,6 +301,9 @@ Mask R-CNN is a state-of-the-art model used for image segmentation, followed clo
 
 The architecture of Mask R-CNN builds upon Faster-RCNN, hence follows a region based convolutional network that returns bounding box and its class label with confidence score. Mask R-CNN will be used to classify, localize and mask the traffic objects in this project.
 
+<img src="./imgs/mask-rcnn-architecture.png" width=1150 height=450 /> <br>
+<i> Figure 26: Mask R-CNN architecture [g] </i>
+
 ### Backbone - ResNet101
 
 The Mask R-CNN to be used for this project has a backbone using ResNet101 [h] that uses a residual network that network architect use to allow deep neural networks while minimizing gradient instability or exploding/vanishing gradients.
@@ -317,7 +320,7 @@ Hence, the residual mapping to be learnt can be represented by F(x) = H(x) - x, 
 Below is an excellent visualization in the article shared above. <br>
 
 <img src="./imgs/skip.png" width=447 height=237 /> <br>
-<i> Figure 26: Skip Connections in ResNet [21] </i> <br>
+<i> Figure 27: Skip Connections in ResNet [21] </i> <br>
 
 ### Vanishing/Exploding gradients
 
@@ -330,7 +333,7 @@ Hence, when a large change occurs in the input, a resulting large derivative val
 This mathematical phenomenon is represented by the graph below:
 
 <img src="./imgs/sigmoid.png" width=700 height=268 /> <br>
-<i> Figure 27: Small derivative term after a large resulting change in input [22] </i>
+<i> Figure 28: Small derivative term after a large resulting change in input [22] </i>
 
 #### Backpropagation
 
@@ -345,8 +348,8 @@ When this phenomenon of vanishing/exploding gradient happens the weights and bia
 ### Possible improvement to Mask R-CNN
 A possible improvement to this project can be replacing the backbone from ResNet101 to ResNet152 that is substantially deeper.
 
-<img src="./imgs/mask-rcnn-architecture.png" width=1150 height=450 /> <br>
-<i> Figure 28: Mask R-CNN architecture [g] </i>
+---
+## Modelling Setup
 
 Matterport's Mask-RCNN has some differences from the official paper, it resizes but keeps the original image aspect ratio by padding the image. [19]
 
@@ -376,7 +379,7 @@ Mask R-CNN annotations and development ongoing..
 The author will research about the use of standardized size ArUco markers for adding another layer of depth perception for various tasks.
 
 <img src="./imgs/ArUco.JPG" width=850 height=620 /> <br>
-<i> Figure 28: Author proposed method using ArUco fiducial markers for naive depth & perception estimation [i] </i>
+<i> Figure 30: Author proposed method using ArUco fiducial markers for naive depth & perception estimation [i] </i>
 
 ## Ongoing Project
 
