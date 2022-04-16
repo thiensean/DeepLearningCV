@@ -350,7 +350,7 @@ A possible improvement to this project can be replacing the backbone from ResNet
 
 There are many considerations in this scenario.
 
-Below, is a comparison of architectures that was publicly released since ResNet was first published.
+Below, is a comparison of architectures that was publicly released to 2019 since ResNet was first published.
 
 <img src="./imgs/compare.png" width=640 height=505 /> <br>
 <i> Figure 29: Comparison between architectures [23] </i>
