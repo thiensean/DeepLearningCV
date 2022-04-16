@@ -309,16 +309,17 @@ Deeper neural networks using residual networks with a higher depth was proven to
 
 ResNet allows very deep networks by learning the residual representation functions instead of learning the signal representation directly. [21]
 
-One unique characteristic of ResNet is that it uses skip connections. By adding a skip connection to add the input to the output after multiple weight layers. [21]
+One unique characteristic of ResNet vs plain networks is that it uses skip connections. By adding a skip connection to add the input to the output after multiple weight layers. [21]
 
-A very effective way of visualizing this example was given in article "Review: ResNet — Winner of ILSVRC 2015 (Image Classification, Localization, Detection), by Sik-Ho Tsang [21]. Where the weight layers in between the input x and output are represented by F(x), the resulting output H(x) is given by H(x) = F(x) + x.
+A very effective way of visualizing this example was given in article "Review: ResNet — Winner of ILSVRC 2015 (Image Classification, Localization, Detection), by Dr Sik-Ho Tsang [21]. Where the weight layers in between the input x and output are represented by F(x), the resulting output H(x) is given by H(x) = F(x) + x.
 
 Hence, the residual mapping to be learnt can be represented by F(x) = H(x) - x, where x represents the identity x.
-Below is an excellent visualization in the article shared above.
+Below is an excellent visualization in the article shared above. <br>
 
 <img src="./imgs/skip.png" width=447 height=237 /> <br>
-<i> Figure 26: Skip Connections in ResNet (excellent visualization by Sik-Ho Tsang, credits: [21]) </i>
+<i> Figure 26: Skip Connections in ResNet (excellent visualization by Dr Sik-Ho Tsang, credits: [21]) </i> <br>
 
+### Possible improvement to Mask R-CNN
 A possible improvement to this project can be replacing the backbone from ResNet101 to ResNet152 that is substantially deeper.
 
 ---
