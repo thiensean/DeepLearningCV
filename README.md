@@ -332,7 +332,7 @@ Mask R-CNN annotations and development ongoing..
 
 The author will research about the use of standardized size ArUco markers for adding another layer of depth perception for various tasks.
 
-<img src="./imgs/ArUco.JPG" width=850 height=420 /> <br>
+<img src="./imgs/ArUco.JPG" width=850 height=620 /> <br>
 <i> Figure 28: Author proposed method using ArUco fiducial markers to achieve another layer of naive depth perception [i] </i>
 
 ## Ongoing Project
