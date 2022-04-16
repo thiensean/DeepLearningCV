@@ -309,7 +309,7 @@ Deeper neural networks using residual networks with a higher depth was proven to
 
 ResNet allows very deep networks by learning the residual representation functions instead of learning the signal representation directly. [21]
 
-One unique characteristic of ResNet vs plain networks is that it uses skip connections. By adding a skip connection to add the input to the output after multiple weight layers. [21]
+One unique characteristic of ResNet vs plain networks is that it uses skip connections, by adding a skip connection to add the input to the output after multiple weight layers. [21]
 
 A very effective way of visualizing this example was given in article "Review: ResNet — Winner of ILSVRC 2015 (Image Classification, Localization, Detection), by Dr Sik-Ho Tsang [21]. Where the weight layers in between the input x and output are represented by F(x), the resulting output H(x) is given by H(x) = F(x) + x.
 
@@ -317,15 +317,36 @@ Hence, the residual mapping to be learnt can be represented by F(x) = H(x) - x, 
 Below is an excellent visualization in the article shared above. <br>
 
 <img src="./imgs/skip.png" width=447 height=237 /> <br>
-<i> Figure 26: Skip Connections in ResNet (excellent visualization by Dr Sik-Ho Tsang, credits: [21]) </i> <br>
+<i> Figure 26: Skip Connections in ResNet [21] </i> <br>
+
+### Vanishing/Exploding gradients
+
+To address the reason for vanishing/exploding gradients, firstly, we drill down the problem.
+
+Activation functions such as sigmoid activation normalizes the input to a value of 0 to 1. In its simplest terms, its derivative represents the rate of change of the underlying term, the input that was normalized.
+
+Hence, when a large change occurs in the input, a resulting large derivative value occurs but becomes very small when there is no resulting change afterwards.
+
+This mathematical phenomenon is represented by the graph below:
+
+<img src="./imgs/sigmoid.png" width=700 height=268 /> <br>
+<i> Figure 27: Small derivative term after a large resulting change in input [22] </i>
+
+#### Backpropagation
+
+Neural network uses backpropagation to update its weights by using the chain rule to find the derivatives of the network by "backward propagation of errors" from the last layer to the first layer.
+
+Small derivatives are multipled together when hidden layers uses activation functions like the sigmoid function [22]. This causes a problem because when the derivations are small, and these gets multipled, it gets exponentially smaller hence, vanishing gradient.
+
+Similarly, in a deep plain network, when large derivatives get multipled, the gradient gets exponentially higher and hence, explodes.
+
+When this phenomenon of vanishing/exploding gradient happens the weights and biases does not get updated effectively and the model does not learn properly.
 
 ### Possible improvement to Mask R-CNN
 A possible improvement to this project can be replacing the backbone from ResNet101 to ResNet152 that is substantially deeper.
 
----
-
 <img src="./imgs/mask-rcnn-architecture.png" width=1150 height=450 /> <br>
-<i> Figure 27: Mask R-CNN architecture [g] </i>
+<i> Figure 28: Mask R-CNN architecture [g] </i>
 
 Matterport's Mask-RCNN has some differences from the official paper, it resizes but keeps the original image aspect ratio by padding the image. [19]
 
@@ -340,7 +361,7 @@ DETECTION_NMS_THRESHOLD        0.3 <br>
 The masks over the objects were annotated using "makesense.ai" [20] using polygons saved in JSON format.
 
 <img src="./imgs/cars1.JPG" width=1150 height=720 /> <br>
-<i> Figure 27: "Cars" Class Mask Annotation </i>
+<i> Figure 29: "Cars" Class Mask Annotation </i>
 
 ### Image Augmentation
 
@@ -411,6 +432,8 @@ Task 4: Rain Removal based on research paper 'A Model-driven Deep Neural Network
 [20] https://www.makesense.ai/
 
 [21] https://towardsdatascience.com/review-resnet-winner-of-ilsvrc-2015-image-classification-localization-detection-e39402bfa5d8
+
+[22] https://towardsdatascience.com/the-vanishing-gradient-problem-69bf08b15484
 
 ---
 
