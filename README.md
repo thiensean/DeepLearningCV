@@ -346,7 +346,14 @@ Similarly, in a deep plain network, when large derivatives get multipled, the gr
 When this phenomenon of vanishing/exploding gradient happens the weights and biases does not get updated effectively and the model does not learn properly.
 
 ### Possible improvement to Mask R-CNN
-A possible improvement to this project can be replacing the backbone from ResNet101 to ResNet152 that is substantially deeper.
+A possible improvement to this project can be replacing the backbone from ResNet101 to a deeper or more efficient architecture.
+
+There are many considerations in this scenario.
+
+Below, is a comparison of architectures that was publicly released since ResNet was first published.
+
+<img src="./imgs/compare.png" width=640 height=505 /> <br>
+<i> Figure 29: Comparison between architectures [23] </i>
 
 ---
 ## Modelling Setup
@@ -364,7 +371,7 @@ DETECTION_NMS_THRESHOLD        0.3 <br>
 The masks over the objects were annotated using "makesense.ai" [20] using polygons saved in JSON format.
 
 <img src="./imgs/cars1.JPG" width=1150 height=720 /> <br>
-<i> Figure 29: "Cars" Class Mask Annotation </i>
+<i> Figure 30: "Cars" Class Mask Annotation </i>
 
 ### Image Augmentation
 
@@ -379,7 +386,7 @@ Mask R-CNN annotations and development ongoing..
 The author will research about the use of standardized size ArUco markers for adding another layer of depth perception for various tasks.
 
 <img src="./imgs/ArUco.JPG" width=850 height=620 /> <br>
-<i> Figure 30: Author proposed method using ArUco fiducial markers for naive depth & perception estimation [i] </i>
+<i> Figure 31: Author proposed method using ArUco fiducial markers for naive depth & perception estimation [i] </i>
 
 ## Ongoing Project
 
@@ -437,6 +444,8 @@ Task 4: Rain Removal based on research paper 'A Model-driven Deep Neural Network
 [21] https://towardsdatascience.com/review-resnet-winner-of-ilsvrc-2015-image-classification-localization-detection-e39402bfa5d8
 
 [22] https://towardsdatascience.com/the-vanishing-gradient-problem-69bf08b15484
+
+[23] 
 
 ---
 
