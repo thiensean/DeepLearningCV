@@ -294,20 +294,37 @@ The image dataset could also be more zoomed out so that the model is able to see
 
 ## Mask R-CNN
 
-Mask R-CNN is planned for implementation in this project. The Mask R-CNN architecture used was cloned from Matterport's Github.
-https://github.com/matterport/Mask_RCNN
+Mask R-CNN is planned for implementation in this project. The Mask R-CNN architecture used was cloned from Matterport's Github [19].
+To start off, Mask R-CNN with pre-trained COCO-weights were loaded. In this implementation, only the "heads" layer will be used to train the model.
 
 Mask R-CNN is a state-of-the-art model used for image segmentation, followed closely by new techniques on researches using transformers with Computer Vision, eg. Mask-Former.
 
 The architecture of Mask R-CNN builds upon Faster-RCNN, hence follows a region based convolutional network that returns bounding box and its class label with confidence score. Mask R-CNN will be used to classify, localize and mask the traffic objects in this project.
 
-The Mask R-CNN to be used for this project has a backbone using ResNet101 [h] that uses a residual network that network architect use to allow deep neural networks without facing gradient instability or exploding/vanishing gradients.
+### Backbone - ResNet101
+
+The Mask R-CNN to be used for this project has a backbone using ResNet101 [h] that uses a residual network that network architect use to allow deep neural networks while minimizing gradient instability or exploding/vanishing gradients.
 
 Deeper neural networks using residual networks with a higher depth was proven to demonstrate higher accuracy in the paper "Deep Residual Learning for Image Recognition". [h]
+
+ResNet allows very deep networks by learning the residual representation functions instead of learning the signal representation directly. [21]
+
+One unique characteristic of ResNet is that it uses skip connections. By adding a skip connection to add the input to the output after multiple weight layers. [21]
+
+A very effective way of visualizing this example was given in article "Review: ResNet — Winner of ILSVRC 2015 (Image Classification, Localization, Detection), by Sik-Ho Tsang [21]. Where the weight layers in between the input x and output are represented by F(x), the resulting output H(x) is given by H(x) = F(x) + x.
+
+Hence, the residual mapping to be learnt can be represented by F(x) = H(x) - x, where x represents the identity x.
+Below is an excellent visualization in the article shared above.
+
+<img src="./imgs/skip.png" width=447 height=237 /> <br>
+<i> Figure 26: Skip Connections in ResNet (excellent visualization by Sik-Ho Tsang, credits: [21]) </i>
+
 A possible improvement to this project can be replacing the backbone from ResNet101 to ResNet152 that is substantially deeper.
 
+---
+
 <img src="./imgs/mask-rcnn-architecture.png" width=1150 height=450 /> <br>
-<i> Figure 26: Mask R-CNN architecture [g] </i>
+<i> Figure 27: Mask R-CNN architecture [g] </i>
 
 Matterport's Mask-RCNN has some differences from the official paper, it resizes but keeps the original image aspect ratio by padding the image. [19]
 
@@ -319,10 +336,14 @@ In this project, the setup is as follows: <br>
 DETECTION_MIN_CONFIDENCE       0.9 <br>
 DETECTION_NMS_THRESHOLD        0.3 <br>
 
-The masks over the objects were annotated manually using "makesense.ai" [20] using polygons saved in JSON format.
+The masks over the objects were annotated using "makesense.ai" [20] using polygons saved in JSON format.
 
 <img src="./imgs/cars1.JPG" width=1150 height=720 /> <br>
 <i> Figure 27: "Cars" Class Mask Annotation </i>
+
+### Image Augmentation
+
+Image augmentation was used to allow the model to see more variations of the same image. This was done using "imgaug", with parameters of the augmentation modified in python file "model.py".
 
 ---
 
@@ -333,14 +354,14 @@ Mask R-CNN annotations and development ongoing..
 The author will research about the use of standardized size ArUco markers for adding another layer of depth perception for various tasks.
 
 <img src="./imgs/ArUco.JPG" width=850 height=620 /> <br>
-<i> Figure 28: Author proposed method using ArUco fiducial markers to achieve another layer of naive depth perception [i] </i>
+<i> Figure 28: Author proposed method using ArUco fiducial markers for naive depth & perception estimation [i] </i>
 
 ## Ongoing Project
 
 Next step in the research and development work will be to improve this model and to use Mask R-CNN to include image segmentation.
 
-Task 1: Mask R-CNN by expanding on the current Functional API model architecture. -- Ongoing <br>
-<b>Task 2: Research into usage of standardized ArUco markers installation on vehicles for naive depth perception </b><br>
+<b> Task 1: Mask R-CNN by expanding on the current Functional API model architecture. -- Ongoing </b> <br>
+Task 2: Research into usage of standardized ArUco markers installation on vehicles for naive depth perception <br>
 Task 3: Stereo Camera CV <br>
 Task 4: Rain Removal based on research paper 'A Model-driven Deep Neural Network for Single Image Rain Removal' [j] <br>
 
@@ -387,6 +408,8 @@ Task 4: Rain Removal based on research paper 'A Model-driven Deep Neural Network
 [19] https://github.com/matterport/Mask_RCNN
 
 [20] https://www.makesense.ai/
+
+[21] https://towardsdatascience.com/review-resnet-winner-of-ilsvrc-2015-image-classification-localization-detection-e39402bfa5d8
 
 ---
 
