@@ -324,7 +324,7 @@ Below is an excellent visualization in the article shared above. <br>
 
 ### Vanishing/Exploding gradients
 
-To address the reason for vanishing/exploding gradients, firstly, we drill down the problem.
+To address why ResNet is suited to tackle the problem of vanishing/exploding gradients that comes with deep networks, firstly, we drill down the problem.
 
 Activation functions such as sigmoid activation normalizes the input to a value of 0 to 1. In its simplest terms, its derivative represents the rate of change of the underlying term, the input that was normalized.
 
