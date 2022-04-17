@@ -86,7 +86,18 @@ Fast R-CNN has an ROI pooling layer where there will be class scores for each re
 <img src="./imgs/models/frcnn.png" width=800 height=520 /> <br>
 <i> Figure 5: Fast R-CNN architecture [3]</i>
 
-Hence, Fast R-CNN network will be evaluated in this project and built from ground up. <br>
+---
+
+### Functional API with Classification and Regression predictions
+
+#### Activation Functions
+
+For this project, the Functional API will be used to build a model based off Fast R-CNN multi-prediction classification and regression outputs.
+
+There will be 2 activation functions:
+
+1. Softmax; Giving class probabilities
+2. Sigmoid; For regression problem (Bounding Box)
 
 ---
 
@@ -272,7 +283,7 @@ This is a work in progress and might work better using image segmentation techni
 ## Part 1 - Conclusion
 
 In conclusion, from this project, it can be seen that the objectives intended were achieved.
-The model was built without using transfer learning from pretrained models. And this solidified the foundation of understanding architectures similar to Fast R-CNN models.
+The model was built without using transfer learning from pretrained models. And this solidified the foundation of understanding architectures for multi-predictions problems.
 
 This may not be the best method, but it is highly adaptable and can be tuned to different sets of images by using libraries like Grad-CAM to understand what each convolution layer sees eg. Lines, Contours, Edges.
 
@@ -393,9 +404,10 @@ The author will research about the use of standardized size ArUco markers for ad
 Next step in the research and development work will be to improve this model and to use Mask R-CNN to include image segmentation.
 
 <b> Task 1: Mask R-CNN by expanding on the current Functional API model architecture. -- Ongoing </b> <br>
-Task 2: Research into usage of standardized ArUco markers installation on vehicles for naive depth perception <br>
-Task 3: Stereo Camera CV <br>
-Task 4: Rain Removal based on research paper 'A Model-driven Deep Neural Network for Single Image Rain Removal' [j] <br>
+Task 2: Single Shot Detectors / YOLO
+Task 3: Research into usage of standardized ArUco markers installation on vehicles for naive depth perception <br>
+Task 4: Stereo Camera CV <br>
+Task 5: Rain Removal based on research paper 'A Model-driven Deep Neural Network for Single Image Rain Removal' [j] <br>
 
 
 
