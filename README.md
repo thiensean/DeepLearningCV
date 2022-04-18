@@ -5,8 +5,13 @@
 ### Lim Thien Sean
 
 #### Industry Mentors: <br>
-Marie Stephen Leo - https://stephen-leo.medium.com/ <br>
-Shilpa Sindhe - https://shilpa-leo.medium.com/ <br>
+Marie Stephen Leo:
+https://www.linkedin.com/in/marie-stephen-leo <br>
+https://stephen-leo.medium.com/ <br>
+
+Shilpa Sindhe:
+https://www.linkedin.com/in/shilpa-sindhe <br>
+https://shilpa-leo.medium.com/ <br>
 
 ---
 # Part 1 - Foundation of Classification & Localization
