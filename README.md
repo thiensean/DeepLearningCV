@@ -98,7 +98,7 @@ Fast R-CNN has an ROI pooling layer where there will be class scores for each re
 #### Activation Functions
 
 For this project, the Functional API will be used to build a model based off Fast R-CNN multi-prediction classification and regression outputs. <br><br>
-A functional model allows the model to make a data driven decision while performing regression on the bounding box coordinates by understanding where certain features lies through feature maps that were created during convolution layers feature extraction phase and where the bounding boxes should be placed.
+A functional model allows the model to make data driven decisions while performing regression on the bounding box coordinates. This is done by connecting the classification and regression branches through the base layer, and this allows the model to understand where certain features lies using the feature maps that were created by the convolution layers feature extraction phase, and hence where to place the bounding boxes.
 It connects the feature maps and the bounding box regression.
 
 There will be 2 activation functions:
