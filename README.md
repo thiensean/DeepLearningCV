@@ -20,8 +20,11 @@ https://shilpa-leo.medium.com/ <br>
 
 Introduction to ADAS:
 
-<img src="./imgs/advancedadas.jpg" width=800 height=370 /> <br>
+<img src="./imgs/advancedadas.jpg" width=800 height=420 /> <br>
 <i> Figure 1: Actual ADAS [18] </i>
+
+<img src="./imgs/adas.JPG" width=800 height=420 /> <br>
+<i> Figure 1-a: Various Tasks of ADAS [18] </i>
 
 Fatalities caused by driving a car is statistically higher than flying, with more than 5 million accidents on the road compared to flying [1].
 
@@ -203,6 +206,15 @@ In this example and in similar images, the model recognizes and emphasizes the h
 <img src="./imgs/gradcammask7.png" width=200 height=200 align='left'/> <br><br><br><br><br><br><br><br><br><br>
 <i> Figure 13: GradCAM 4 </i>
 
+### Loss Function
+
+The loss function used for this project was Mean Squared Error (MSE) as it tells the model the error from the groundtruth.
+
+Ideally, the loss function should be custom written as IoU loss function.
+
+<img src="./imgs/loss.JPG" width=343 height=393 align='left'/> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<i> Figure 14: Loss Function - Mean Squared Error </i>
+
 ### Metric
 
 There are 2 sets of metrics for classification and localization.
@@ -213,14 +225,14 @@ These 2 metrics will substantiate the classification by telling us the precision
 Intersection over Union (IoU) or 'Jaccard Distance' is a good measure of the accuracy of the regression. [b]
 
 <img src="./imgs/IOU1.JPG" width=280 height=280 align='left' /> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<i> Figure 14: IOU metric [b] </i>
+<i> Figure 15: IOU metric [b] </i>
 
 #### Results of Classification
 
 Classification results had an average precision score of <b>0.97</b>.
 
 <img src="./imgs/precision.JPG" width=450 height=800 /> <br>
-<i> Figure 15: Results of Classification [b] </i>
+<i> Figure 16: Results of Classification [b] </i>
 
 #### Results of object localization
 
@@ -229,22 +241,22 @@ Average results of IOU is <b>0.88</b>.
 Below are samples of the images that were both classified and localized.
 
 <img src="./imgs/classlocalize/10_10.png" width=500 height=350 /> <br>
-<i> Figure 16: Image localization IOU results </i>
-
-<img src="./imgs/classlocalize/12_12.png" width=500 height=350 /> <br>
 <i> Figure 17: Image localization IOU results </i>
 
-<img src="./imgs/classlocalize/55_55.png" width=500 height=350 /> <br>
+<img src="./imgs/classlocalize/12_12.png" width=500 height=350 /> <br>
 <i> Figure 18: Image localization IOU results </i>
 
-<img src="./imgs/classlocalize/78_78.png" width=500 height=350 /> <br>
+<img src="./imgs/classlocalize/55_55.png" width=500 height=350 /> <br>
 <i> Figure 19: Image localization IOU results </i>
 
-<img src="./imgs/classlocalize/62_62.png" width=500 height=350 /> <br>
+<img src="./imgs/classlocalize/78_78.png" width=500 height=350 /> <br>
 <i> Figure 20: Image localization IOU results </i>
 
-<img src="./imgs/classlocalize/70_70.png" width=500 height=350 /> <br>
+<img src="./imgs/classlocalize/62_62.png" width=500 height=350 /> <br>
 <i> Figure 21: Image localization IOU results </i>
+
+<img src="./imgs/classlocalize/70_70.png" width=500 height=350 /> <br>
+<i> Figure 22: Image localization IOU results </i>
 
 ### Flask API
 
@@ -255,14 +267,14 @@ The rendering of the bounding boxes would be performed on the local machine.
 The file to serve the API was saved as 'serve.py' inside the working folder.
 
 <img src="./imgs/api.JPG" width=950 height=500 /> <br>
-<i> Figure 22: API structure </i>
+<i> Figure 23: API structure </i>
 
 ### Simple web deployment
 
 The model was deployed as a simple web app in Streamlit.
 
 <img src="./imgs/streamlit.gif" width=1100 height=600 /> <br>
-<i> Figure 23: Simple web app using Streamlit to demonstrate model deployment </i>
+<i> Figure 24: Simple web app using Streamlit to demonstrate model deployment </i>
 
 ## Object Tracking
 
@@ -278,12 +290,12 @@ A threshold of 30 pixels were set so that if the object detection from the previ
 Below are a sample of the results:
 
 <img src="./imgs/opencvdnn.JPG" width=1150 height=750 /> <br>
-<i> Figure 24: Trajectory tracking using yoloV4 with OpenCV </i>
+<i> Figure 25: Trajectory tracking using yoloV4 with OpenCV </i>
 
 This is a work in progress and might work better using image segmentation techniques. [17]
 
 <img src="./imgs/trajectorytracking.gif" width=500 height=340 /> <br>
-<i> Figure 25: Trimmed video with carplates censored. [18] </i>
+<i> Figure 26: Trimmed video with carplates censored. [18] </i>
 
 ---
 
@@ -320,7 +332,7 @@ Mask R-CNN is a state-of-the-art model used for image segmentation, followed clo
 The architecture of Mask R-CNN builds upon Faster-RCNN, hence follows a region based convolutional network that returns bounding box and its class label with confidence score. Mask R-CNN will be used to classify, localize and mask the traffic objects in this project.
 
 <img src="./imgs/mask-rcnn-architecture.png" width=1150 height=450 /> <br>
-<i> Figure 26: Mask R-CNN architecture [g] </i>
+<i> Figure 27: Mask R-CNN architecture [g] </i>
 
 ### Backbone - ResNet101
 
@@ -338,7 +350,7 @@ Hence, the residual mapping to be learnt can be represented by F(x) = H(x) - x, 
 Below is an excellent visualization in the article shared above. <br>
 
 <img src="./imgs/skip.png" width=447 height=237 /> <br>
-<i> Figure 27: Skip Connections in ResNet [21] </i> <br>
+<i> Figure 28: Skip Connections in ResNet [21] </i> <br>
 
 ### Vanishing/Exploding gradients
 
@@ -351,7 +363,7 @@ Hence, when a large change occurs in the input, a resulting large derivative val
 This mathematical phenomenon is represented by the graph below:
 
 <img src="./imgs/sigmoid.png" width=700 height=268 /> <br>
-<i> Figure 28: Small derivative term after a large resulting change in input [22] </i>
+<i> Figure 29: Small derivative term after a large resulting change in input [22] </i>
 
 #### Backpropagation
 
@@ -371,7 +383,7 @@ There are many considerations in this scenario.
 Below, is a comparison of architectures that was publicly released to 2019 since ResNet was first published.
 
 <img src="./imgs/compare.png" width=640 height=505 /> <br>
-<i> Figure 29: Comparison between architectures [23] </i>
+<i> Figure 30: Comparison between architectures [23] </i>
 
 ---
 ## Modelling Setup
@@ -389,7 +401,7 @@ DETECTION_NMS_THRESHOLD        0.3 <br>
 The masks over the objects were annotated using "makesense.ai" [20] using polygons saved in JSON format.
 
 <img src="./imgs/cars1.JPG" width=1150 height=720 /> <br>
-<i> Figure 30: "Cars" Class Mask Annotation </i>
+<i> Figure 31: "Cars" Class Mask Annotation </i>
 
 ### Image Augmentation
 
@@ -404,7 +416,7 @@ Mask R-CNN annotations and development ongoing..
 The author will research about the use of standardized size ArUco markers for adding another layer of depth perception for various tasks.
 
 <img src="./imgs/ArUco.JPG" width=850 height=620 /> <br>
-<i> Figure 31: Author proposed method using ArUco fiducial markers for naive depth & perception estimation [i] </i>
+<i> Figure 32: Author proposed method using ArUco fiducial markers for naive depth & perception estimation [i] </i>
 
 ## Ongoing Project
 
