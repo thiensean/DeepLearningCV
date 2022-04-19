@@ -212,8 +212,8 @@ The loss function used for this project was Mean Squared Error (MSE) as it tells
 
 Ideally, the loss function should be custom written as IoU loss function.
 
-<img src="./imgs/loss.JPG" width=274.4 height=314.4 align='left'/> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<i> Figure 14: Loss Function - Mean Squared Error </i>
+<img src="./imgs/loss.JPG" width=274.4 height=314.4 align='left'/> <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<i> Figure 14: Loss Function - Mean Squared Error [c] </i>
 
 ### Metric
 
@@ -224,7 +224,7 @@ These 2 metrics will substantiate the classification by telling us the precision
 
 Intersection over Union (IoU) or 'Jaccard Distance' is a good measure of the accuracy of the regression. [b]
 
-<img src="./imgs/IOU1.JPG" width=280 height=280 align='left' /> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<img src="./imgs/IOU1.JPG" width=280 height=280 align='left' /> <br><br><br><br><br><br><br><br><br><br><br><br><br>
 <i> Figure 15: IOU metric [b] </i>
 
 #### Results of Classification
