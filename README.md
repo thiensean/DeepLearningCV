@@ -212,7 +212,7 @@ The loss function used for this project was Mean Squared Error (MSE) as it tells
 
 Ideally, the loss function should be custom written as IoU loss function.
 
-<img src="./imgs/loss.JPG" width=343 height=393 align='left'/> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<img src="./imgs/loss.JPG" width=274.4 height=314.4 align='left'/> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <i> Figure 14: Loss Function - Mean Squared Error </i>
 
 ### Metric
