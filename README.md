@@ -424,7 +424,7 @@ Next step in the research and development work will be to improve this model and
 
 <b> Task 1: Mask R-CNN by expanding on the current Functional API model architecture. -- Ongoing </b> <br>
 Task 2: Single Shot Detectors / YOLO <br>
-Task 3: Research into usage of standardized ArUco markers installation on vehicles for naive depth perception <br>
+Task 3: Unsupervised Anomaly Detection using Generative Adversarial Networks <br>
 Task 4: Stereo Camera CV <br>
 Task 5: Rain Removal based on research paper 'A Model-driven Deep Neural Network for Single Image Rain Removal' [j] <br>
 
@@ -502,6 +502,8 @@ Vedantam · Devi Parikh · Dhruv Batra
 [i] Autonomous UAV with vision based on-board decision making for remote sensing and precision agriculture, Bilal H. Alsalam, Kye Morton, Duncan Andrew Campbell, Luis Felipe Gonzalez
 
 [j] A Model-driven Deep Neural Network for Single Image Rain Removal, Hong Wang, Qi Xie, Qian Zhao, Deyu Meng
+
+[k] Unsupervised Learning of Anomaly Detection from Contaminated Image Data using Simultaneous Encoder Training, Amanda Berg, Jorgen Ahlberg, Michael Felsberg, Termisk, Systemteknik AB, Diskettgatan 11 B, 583 35 Linkoping, Sweden, Computer Vision Laboratory, Dept. EE
 
 ---
 
