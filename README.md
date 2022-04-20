@@ -292,7 +292,7 @@ Below are a sample of the results:
 <img src="./imgs/opencvdnn.JPG" width=1150 height=750 /> <br>
 <i> Figure 25: Trajectory tracking using yoloV4 with OpenCV </i>
 
-This is a work in progress and might work better using image segmentation techniques. [17]
+This is a work in progress and might work better using image segmentation techniques. [17][m, Image Segmentation and Pattern Matching]
 
 <img src="./imgs/trajectorytracking.gif" width=500 height=340 /> <br>
 <i> Figure 26: Trimmed video with carplates censored. [18] </i>
@@ -513,7 +513,7 @@ Vedantam · Devi Parikh · Dhruv Batra
 
 [k] Unsupervised Learning of Anomaly Detection from Contaminated Image Data using Simultaneous Encoder Training, Amanda Berg, Jorgen Ahlberg, Michael Felsberg, Termisk, Systemteknik AB, Diskettgatan 11 B, 583 35 Linkoping, Sweden, Computer Vision Laboratory, Dept. EE
 
-[l] Image Segmentation and Pattern Matching Based FPGA/ASIC Implementation Architecture of Real-Time Object Tracking, K. Yamaoka, T. Morimoto, H. Adachi, T. Koide, and H. J. Mattausch, Research Center for Nanodevices and Systems, Hiroshima University
+[m] Image Segmentation and Pattern Matching Based FPGA/ASIC Implementation Architecture of Real-Time Object Tracking, K. Yamaoka, T. Morimoto, H. Adachi, T. Koide, and H. J. Mattausch, Research Center for Nanodevices and Systems, Hiroshima University
 
 ---
 
