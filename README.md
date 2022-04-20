@@ -513,6 +513,8 @@ Vedantam · Devi Parikh · Dhruv Batra
 
 [k] Unsupervised Learning of Anomaly Detection from Contaminated Image Data using Simultaneous Encoder Training, Amanda Berg, Jorgen Ahlberg, Michael Felsberg, Termisk, Systemteknik AB, Diskettgatan 11 B, 583 35 Linkoping, Sweden, Computer Vision Laboratory, Dept. EE
 
+[l] Image Segmentation and Pattern Matching Based FPGA/ASIC Implementation Architecture of Real-Time Object Tracking, K. Yamaoka, T. Morimoto, H. Adachi, T. Koide, and H. J. Mattausch, Research Center for Nanodevices and Systems, Hiroshima University
+
 ---
 
 Dataset: 
