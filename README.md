@@ -32,6 +32,9 @@ The automotive industry have been making significant advances that have been bot
 
 Deployment of computer vision in automotive vehicles have a set of unique requirements. They are required to 'see' like humans, classify pedestrians, street signs, vehicles, road hazards and localize these objects in their field of view. A further set of sensors like LiDAR and stereo cameras add a 3rd layer of 3D depth to the vast sensing arrays deployed in automotive vehicles.
 
+<img src="./imgs/adas1.JPG" width=923 height=547 /> <br>
+<i> Figure 1-b: Various Tasks of ADAS [25] </i>
+
 Hence, advancements in deep learning in Computer Vision (CV) plays a huge role in advancing automotive safety. There are 3 topics involved (and more that were not researched heavily in this capstone): <br>
     1. Object classification <br>
     2. Object localization <br>
@@ -58,7 +61,7 @@ The dataset was obtained from 2 sources, 1 of which was from an online source wi
 
 ---
 
-### Research Work before Starting the Project
+### Research Work
 
 Object localization was a task with different solutions. A few solutions were researched to accomplish object localization:
 
@@ -494,6 +497,8 @@ Improvement Research Tasks: <br>
 [23] https://ai.googleblog.com/2019/05/efficientnet-improving-accuracy-and.html
 
 [24] https://towardsdatascience.com/google-releases-efficientnetv2-a-smaller-faster-and-better-efficientnet-673a77bdd43c
+
+[25] https://caradas.com/adas-have-changed-the-auto-industry-forever-heres-how/
 
 ---
 
