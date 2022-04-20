@@ -424,9 +424,8 @@ Next step in the research and development work will be to improve this model and
 
 <b> Task 1: Mask R-CNN by expanding on the current Functional API model architecture. -- Ongoing </b> <br>
 Task 2: Single Shot Detectors / YOLO <br>
-Task 3: Unsupervised Anomaly Detection using Generative Adversarial Networks [k] <br>
-Task 4: Stereo Camera CV <br>
-Task 5: Rain Removal based on research paper 'A Model-driven Deep Neural Network for Single Image Rain Removal' [j] <br>
+Task 3: Stereo Camera CV <br>
+Task 4: Rain Removal based on research paper 'A Model-driven Deep Neural Network for Single Image Rain Removal' [j] <br>
 
 
 
