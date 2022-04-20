@@ -400,12 +400,21 @@ DETECTION_NMS_THRESHOLD        0.3 <br>
 
 The masks over the objects were annotated using "makesense.ai" [20] using polygons saved in JSON format.
 
-<img src="./imgs/cars1.JPG" width=1150 height=720 /> <br>
+<img src="./imgs/cars1.JPG" width=1150 height=710 /> <br>
 <i> Figure 31: "Cars" Class Mask Annotation </i>
 
 ### Image Augmentation
 
 Image augmentation was used to allow the model to see more variations of the same image. This was done using "imgaug", with parameters of the augmentation modified in python file "model.py".
+
+### Callbacks
+
+2 Callbacks were used for mask RCNN training:
+
+1. Early Stopping
+2. ReduceLROnPlateau with minimum learning rate set at 0.001.
+
+'val_loss' was used for monitoring the training process to achieve the best results.
 
 ---
 
