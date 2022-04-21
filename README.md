@@ -425,7 +425,7 @@ Mask R-CNN annotations and development ongoing..
 
 ---
 
-# Part 3 -LiDAR
+# Part 3 - LiDAR
 
 ## LiDAR Segmentation
 
