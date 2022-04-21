@@ -427,7 +427,7 @@ Mask R-CNN annotations and development ongoing..
 
 # Part 3 - LiDAR
 
-## LiDAR Segmentation
+## LiDAR Point Cloud Segmentation
 
 <img src="./imgs/lidarsemanticsegment.png" width=560 height=420 /> <br>
 <i> Figure 32: LiDAR point cloud [26]</i>
