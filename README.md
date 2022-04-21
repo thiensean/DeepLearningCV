@@ -432,12 +432,15 @@ Mask R-CNN annotations and development ongoing..
 <img src="./imgs/dbscan.png" width=366.85 height=526.5 /> <br>
 <i> Figure 32: LiDAR Segmentation using DBSCAN, an unsupervised clustering technique [27]</i>
 
+<img src="./imgs/lidarsemanticsegment.png" width=560 height=420 /> <br>
+<i> Figure 33: LiDAR Segmentation using DBSCAN, an unsupervised clustering technique [27]</i>
+
 ## Research into usage of standardized ArUco fiducial markers for ADAS
 
 The author will research about the use of standardized size ArUco markers for adding another layer of depth perception for various tasks.
 
 <img src="./imgs/ArUco.JPG" width=850 height=620 /> <br>
-<i> Figure 33: Author proposed method using ArUco fiducial markers for naive depth & perception estimation [i] </i>
+<i> Figure 34: Author proposed method using ArUco fiducial markers for naive depth & perception estimation [i] </i>
 
 ## Ongoing Project
 
