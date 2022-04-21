@@ -429,18 +429,46 @@ Mask R-CNN annotations and development ongoing..
 
 ## LiDAR Segmentation
 
-<img src="./imgs/dbscan.png" width=366.85 height=526.5 /> <br>
-<i> Figure 32: LiDAR Segmentation using DBSCAN, an unsupervised clustering technique [27]</i>
-
 <img src="./imgs/lidarsemanticsegment.png" width=560 height=420 /> <br>
-<i> Figure 33: LiDAR point cloud [26]</i>
+<i> Figure 32: LiDAR point cloud [26]</i>
+
+LiDAR point clouds can be segmented by unsupervised machine learning techniques like DBSCAN.
+
+They can be treated as 'pixels' with depth information, adding another dimension to the point cloud visualization.
+
+### DBSCAN
+
+DBSCAN, Density-Based Spatial Clustering of Applications with Noise, an unsupervised machine learning algorithm is useful in this aspect. LiDAR point clouds data returns unlabeled and heavily clustered when the LiDAR laser beam lands and is reflected upon an object.
+
+LiDAR data characteristic makes it suitable to use DBSCAN or K-means clustering Machine Learning techniques to segment it.
+Using this method, the algorithm can be optimized and noise points ignored if they are not close enough to core points to be considered as part of the cluster, or belonging to the border point.
+
+<img src="./imgs/lidar2.png" width=1400 height=564 /> <br>
+<i> Figure 33: LiDAR Point Cloud Segmentation [28] </i>
+
+This makes it very useful for LiDAR since LiDAR point cloud density and the rate of scanning (for MEMs LiDAR) is known beforehand. This allows the engineer to tune the 'Epsilon' value of DBSCAN to segment the point cloud effectively. 
+
+The epsilon value can be optimized and can be studied further. [n]
+
+### K-means clustering
+
+K-means clustering, an unsupervised machine learning clustering technique works by minimizing the sum of the distances between each object or cluster centroid by predefining the 'K' value, also known as the the number of centroids. This algorithm can also be used to segment the point cloud but its not as intuitive as DBSCAN due to the need to define the number of centroids.
+
+### LiDAR Point Cloud Segmentation with Bounding Box
+
+<img src="./imgs/lidar3.png" width=1400 height=555 /> <br>
+<i> Figure 34: LiDAR Point Cloud Segmentation with Bounding Box [28] </i>
+
+### Combination with Deep Learning Computer Vision - Fusion Sensor
+
+LiDAR can be merged with Computer Vision to create fusion sensor, turning the sensor into a reliable method that complements the strength and weaknesses of each other.
 
 ## Research into usage of standardized ArUco fiducial markers for ADAS
 
 The author will research about the use of standardized size ArUco markers for adding another layer of depth perception for various tasks.
 
 <img src="./imgs/ArUco.JPG" width=850 height=620 /> <br>
-<i> Figure 34: Author proposed method using ArUco fiducial markers for naive depth & perception estimation [i] </i>
+<i> Figure 35: Author proposed method using ArUco fiducial markers for naive depth & perception estimation [i] </i>
 
 ## Ongoing Project
 
@@ -448,11 +476,12 @@ Next step in the research and development work will be to improve this model and
 
 <b> Task 1: Mask R-CNN by expanding on the current Functional API model architecture. -- Ongoing </b> <br>
 Task 2: Single Shot Detectors / YOLO <br>
-Task 3: Lane Detection - Rule Based & Deep Learning methods <br>
-Task 4: Stereo Camera CV <br>
-Task 5: Rain Removal based on research paper 'A Model-driven Deep Neural Network for Single Image Rain Removal' [j] <br>
-Task 6: Pedestrian Pose Estimation - Edge cases <br>
-Task 7: ArUco fiducial markers <br>
+Task 3: LiDAR Point Cloud Segmentation <br>
+Task 4: Lane Detection - Rule Based & Deep Learning methods <br>
+Task 5: Stereo Camera CV <br>
+Task 6: Rain Removal based on research paper 'A Model-driven Deep Neural Network for Single Image Rain Removal' [j] <br>
+Task 7: Pedestrian Pose Estimation - Edge cases <br>
+Task 8: ArUco fiducial markers <br>
 
 Improvement Research Tasks: <br>
 1. Mask Segmentation during object occlusion <br>
@@ -516,6 +545,8 @@ Improvement Research Tasks: <br>
 
 [27] https://cbmjournal.biomedcentral.com/articles/10.1186/s13021-018-0098-0/figures/2
 
+[28] https://medium.datadriveninvestor.com/lidar-3d-perception-and-object-detection-311419886bd2
+
 ---
 
 [a] Research papers and materials: With great thanks to the following authors for sharing their research papers and materials on the topic of object classification and localization.
@@ -542,6 +573,8 @@ Vedantam · Devi Parikh · Dhruv Batra
 [k] Unsupervised Learning of Anomaly Detection from Contaminated Image Data using Simultaneous Encoder Training, Amanda Berg, Jorgen Ahlberg, Michael Felsberg, Termisk, Systemteknik AB, Diskettgatan 11 B, 583 35 Linkoping, Sweden, Computer Vision Laboratory, Dept. EE
 
 [m] Image Segmentation and Pattern Matching Based FPGA/ASIC Implementation Architecture of Real-Time Object Tracking, K. Yamaoka, T. Morimoto, H. Adachi, T. Koide, and H. J. Mattausch, Research Center for Nanodevices and Systems, Hiroshima University
+
+[n] An Improved DBSCAN Method for LiDAR Data Segmentation with Automatic Eps Estimation, Chunxiao Wang, Min Ji, Jian Wang, Wei Wen, Ting Li, and Yong Sun
 
 ---
 
