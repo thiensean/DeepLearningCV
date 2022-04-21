@@ -423,12 +423,21 @@ Image augmentation was used to allow the model to see more variations of the sam
 
 Mask R-CNN annotations and development ongoing..
 
+---
+
+# Part 3 -LiDAR
+
+## LiDAR Segmentation
+
+<img src="./imgs/dbscan.png" width=366.85 height=526.5 /> <br>
+<i> Figure 32: LiDAR Segmentation using DBSCAN </i>
+
 ## Research into usage of standardized ArUco fiducial markers for ADAS
 
 The author will research about the use of standardized size ArUco markers for adding another layer of depth perception for various tasks.
 
 <img src="./imgs/ArUco.JPG" width=850 height=620 /> <br>
-<i> Figure 32: Author proposed method using ArUco fiducial markers for naive depth & perception estimation [i] </i>
+<i> Figure 33: Author proposed method using ArUco fiducial markers for naive depth & perception estimation [i] </i>
 
 ## Ongoing Project
 
@@ -499,6 +508,10 @@ Improvement Research Tasks: <br>
 [24] https://towardsdatascience.com/google-releases-efficientnetv2-a-smaller-faster-and-better-efficientnet-673a77bdd43c
 
 [25] https://caradas.com/adas-have-changed-the-auto-industry-forever-heres-how/
+
+[26] https://www.mathworks.com/help/deeplearning/ug/lidar-semantic-segmentation-using-squeezesegv2.html
+
+[27] https://cbmjournal.biomedcentral.com/articles/10.1186/s13021-018-0098-0/figures/2
 
 ---
 
