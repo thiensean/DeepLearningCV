@@ -433,7 +433,7 @@ Mask R-CNN annotations and development ongoing..
 <i> Figure 32: LiDAR Segmentation using DBSCAN, an unsupervised clustering technique [27]</i>
 
 <img src="./imgs/lidarsemanticsegment.png" width=560 height=420 /> <br>
-<i> Figure 33: LiDAR Segmentation using DBSCAN, an unsupervised clustering technique [27]</i>
+<i> Figure 33: LiDAR point cloud [26]</i>
 
 ## Research into usage of standardized ArUco fiducial markers for ADAS
 
