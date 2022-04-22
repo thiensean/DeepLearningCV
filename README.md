@@ -475,13 +475,14 @@ The author will research about the use of standardized size ArUco markers for ad
 Next step in the research and development work will be to improve this model and to use Mask R-CNN to include image segmentation.
 
 <b> Task 1: Mask R-CNN by expanding on the current Functional API model architecture. -- Ongoing </b> <br>
-Task 2: Single Shot Detectors / YOLO <br>
-Task 3: LiDAR Point Cloud Segmentation <br>
-Task 4: Lane Detection - Rule Based & Deep Learning methods <br>
-Task 5: Stereo Camera CV <br>
-Task 6: Rain Removal based on research paper 'A Model-driven Deep Neural Network for Single Image Rain Removal' [j] <br>
-Task 7: Pedestrian Pose Estimation - Edge cases <br>
-Task 8: ArUco fiducial markers <br>
+Task 2: Panoptic Segmentation with EfficientPS <br>
+Task 3: Single Shot Detectors / YOLO <br>
+Task 4: LiDAR Point Cloud Segmentation <br>
+Task 5: Lane Detection - Rule Based & Deep Learning methods <br>
+Task 6: Stereo Camera CV <br>
+Task 7: Rain Removal based on research paper 'A Model-driven Deep Neural Network for Single Image Rain Removal' [j] <br>
+Task 8: Pedestrian Pose Estimation - Edge cases <br>
+Task 9: ArUco fiducial markers <br>
 
 Improvement Research Tasks: <br>
 1. Mask Segmentation during object occlusion <br>
