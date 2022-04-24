@@ -180,6 +180,8 @@ Figure 9-1: Visualizing Functional API model connections & output shape <br>
 ---
 ### GradCAM
 
+---
+
 #### Purpose of GradCAM
 
 GradCAM was established with the purpose of allowing visualization of activation regions in Convolutional Neural Network based models, allowing explanability and establishing trust in the model. [e]
