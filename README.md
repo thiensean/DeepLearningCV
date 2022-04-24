@@ -426,6 +426,9 @@ With condition being <0.3 and >0.7, there will be some achors that are neither p
 In Mask-RCNN, it uses a Fully Convolution Network (FCN) for the pixel-to-pixel task.
 This extends Faster R-CNN by adding a parallel branch for predicting segmentation masks on top of Faster R-CNN's ability to predict class and bounding box.
 
+<img src="./imgs/mrcnn-branch.png" width=850 height=334 /> <br>
+<i> Figure 31: Mask R-CNN Branch Extended from Faster R-CNN </i>
+
 In the architecture explained in the original paper, the ResNet-FPN variant was adopted.
 
 To produce a relatively high resolution output to achieve localization accuracy, the keypoint head consisted of a stack of 8, '3×3', '512-d' conv layers, followed by a deconv layer and 2× bilinear upscaling.
