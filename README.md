@@ -378,6 +378,21 @@ Similarly, in a deep plain network, when large derivatives get multipled, the gr
 
 When this phenomenon of vanishing/exploding gradient happens the weights and biases does not get updated effectively and the model does not learn properly.
 
+#### Region Proposal Networks [p]
+
+A Region Proposal Network (RPN) takes an image as input and outputs object proposals in terms of 'Bounding Box' by scoring each proposal based on its class.
+
+The method to generating these region proposals can be visualized on a high level by sliding a network over the convolutional feature map output. This sliding window are mapped to a low dimension feature and then fed into 2 fully connected layers branching out into a box regression layer and a box classification layer.
+
+This sliding network is repeated and shared with all locations in an image.
+
+<img src="./imgs/rpn.JPG width=853 height=526 /> <br>
+<i> Figure 30: Region Proposal Network [p] </i>
+          
+The detections using a Region Proposal Network is a class with its probabilities and a bounding box.
+          
+Non-Max Suppression is used to reduce redundancy based on their class scores. The top overlapping proposals are collapsed and used for detection.
+
 ### Possible improvement to Mask R-CNN
 A possible improvement to this project can be replacing the backbone from ResNet101 to a deeper or more efficient architecture.
 
@@ -386,7 +401,7 @@ There are many considerations in this scenario.
 Below, is a comparison of architectures that was publicly released to 2019 since ResNet was first published.
 
 <img src="./imgs/compare.png" width=640 height=505 /> <br>
-<i> Figure 30: Comparison between architectures [23] </i>
+<i> Figure 31: Comparison between architectures [23] </i>
 
 ---
 ## Modelling Setup
@@ -404,7 +419,7 @@ DETECTION_NMS_THRESHOLD        0.3 <br>
 The masks over the objects were annotated using "makesense.ai" [20] using polygons saved in JSON format.
 
 <img src="./imgs/cars1.JPG" width=1150 height=710 /> <br>
-<i> Figure 31: "Cars" Class Mask Annotation </i>
+<i> Figure 32: "Cars" Class Mask Annotation </i>
 
 ### Image Augmentation
 
@@ -430,7 +445,7 @@ Mask R-CNN annotations and development ongoing..
 ## LiDAR Point Cloud Segmentation
 
 <img src="./imgs/lidarsemanticsegment.png" width=560 height=420 /> <br>
-<i> Figure 32: LiDAR point cloud [26]</i>
+<i> Figure 33: LiDAR point cloud [26]</i>
 
 LiDAR point clouds can be segmented by unsupervised machine learning techniques like DBSCAN.
 
@@ -444,7 +459,7 @@ LiDAR data characteristic makes it suitable to use DBSCAN or K-means clustering 
 Using this method, the algorithm can be optimized and noise points ignored if they are not close enough to core points to be considered as part of the cluster, or belonging to the border point.
 
 <img src="./imgs/lidar2.png" width=1400 height=564 /> <br>
-<i> Figure 33: LiDAR Point Cloud Segmentation [28] </i>
+<i> Figure 34: LiDAR Point Cloud Segmentation [28] </i>
 
 This makes it very useful for LiDAR since LiDAR point cloud density and the rate of scanning (for MEMs LiDAR) is known beforehand. This allows the engineer to tune the 'Epsilon' value of DBSCAN to segment the point cloud effectively. 
 
@@ -457,7 +472,7 @@ K-means clustering, an unsupervised machine learning clustering technique works 
 ### LiDAR Point Cloud Segmentation with Bounding Box
 
 <img src="./imgs/lidar3.png" width=1400 height=555 /> <br>
-<i> Figure 34: LiDAR Point Cloud Segmentation with Bounding Box [28] </i>
+<i> Figure 35: LiDAR Point Cloud Segmentation with Bounding Box [28] </i>
 
 ### Combination with Deep Learning Computer Vision - Fusion Sensor
 
@@ -468,7 +483,7 @@ LiDAR can be merged with Computer Vision to create fusion sensor, turning the se
 The author will research about the use of standardized size ArUco markers for adding another layer of depth perception for various tasks.
 
 <img src="./imgs/ArUco.JPG" width=850 height=620 /> <br>
-<i> Figure 35: Author proposed method using ArUco fiducial markers for naive depth & perception estimation [i] </i>
+<i> Figure 36: Author proposed method using ArUco fiducial markers for naive depth & perception estimation [i] </i>
 
 ## Ongoing Project
 
@@ -576,6 +591,8 @@ Vedantam · Devi Parikh · Dhruv Batra
 [m] Image Segmentation and Pattern Matching Based FPGA/ASIC Implementation Architecture of Real-Time Object Tracking, K. Yamaoka, T. Morimoto, H. Adachi, T. Koide, and H. J. Mattausch, Research Center for Nanodevices and Systems, Hiroshima University
 
 [n] An Improved DBSCAN Method for LiDAR Data Segmentation with Automatic Eps Estimation, Chunxiao Wang, Min Ji, Jian Wang, Wei Wen, Ting Li, and Yong Sun
+
+[p] Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks, Shaoqing Ren, Kaiming He, Ross Girshick, and Jian Sun
 
 ---
 
