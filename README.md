@@ -439,6 +439,9 @@ To allow pixel level alignment between network inputs and outputs, in the origin
 
 As a result of 'RoiAlign', the mask accuracy was improved by 10% to 50% [q].
 
+<img src="./imgs/roialign.JPG" width=684 height=549 /> <br>
+<i> Figure 32: RoiALign for Mask Alignment Improvement </i>
+
 #### Instance Segmentation
 
 In order to effectively achieve instance segmentation, the masking was decoupled from the class predictions.
@@ -612,6 +615,8 @@ Improvement Research Tasks: <br>
 [27] https://cbmjournal.biomedcentral.com/articles/10.1186/s13021-018-0098-0/figures/2
 
 [28] https://medium.datadriveninvestor.com/lidar-3d-perception-and-object-detection-311419886bd2
+
+[29] https://jonathan-hui.medium.com/image-segmentation-with-mask-r-cnn-ebe6d793272#:~:text=Mask%20R%2DCNN%20uses%20ROI,values%20within%20the%20cell%20better.
 
 ---
 
