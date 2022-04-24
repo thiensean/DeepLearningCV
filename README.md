@@ -325,7 +325,7 @@ The image dataset could also be more zoomed out so that the model is able to see
 
 # Part 2 - Mask R-CNN with Deep Neural Networks (ResNet)
 
-## Types of Segmentation Architectures to be Studied
+## Alternative Segmentation Architectures to be Studied
 
 1. Mask R-CNN
 2. SOLOv2
