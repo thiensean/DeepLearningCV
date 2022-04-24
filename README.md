@@ -178,7 +178,7 @@ Figure 9: Functional Model with Fast R-CNN architecture <br><br><br>
 Figure 9-1: Visualizing Functional API model connections & output shape <br>
 
 ---
-#### GradCAM
+### GradCAM
 
 #### Purpose of GradCAM
 
