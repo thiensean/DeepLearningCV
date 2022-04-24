@@ -445,8 +445,6 @@ With condition being <0.3 and >0.7, there will be some achors that are neither p
 
 ## Mask Branch [q]
 
----
-
 In Mask-RCNN, it uses a Fully Convolution Network (FCN) for the pixel-to-pixel task.
 This extends Faster R-CNN by adding a parallel branch for predicting segmentation masks on top of Faster R-CNN's ability to predict class and bounding box.
 
