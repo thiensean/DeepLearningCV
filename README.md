@@ -435,18 +435,32 @@ To produce a relatively high resolution output to achieve localization accuracy,
 
 #### Pixel-to-Pixel Alignment
 
-To allow pixel level alignment between network inputs and outputs, in the original paper, a simple and quantization-free layer called <b>RoiAlign</b> to preserve the exact spatial locations was proposed.
+To allow pixel level alignment between network inputs and outputs, in the original paper, a simple and quantization-free layer called <b>ROIAlign</b> to preserve the exact spatial locations was proposed.
 
 As a result of 'RoiAlign', the mask accuracy was improved by 10% to 50% [q].
 
+In the image below, it can be seen that in ROI Align, the boundary of the cells for Mask R-CNN were not digitalized, meaning the pixels around borders of the ROI remained 'separated'.
+
+Furthermore, the size of the target cell was partitioned to be the same size.
+
+Interpolation was also one technique of Mask R-CNN's ROI Align to calculate and improve the feature map values within the cell, as can be seen in the image below. [29]
+
 <img src="./imgs/roialign.JPG" width=684 height=549 /> <br>
-<i> Figure 32: RoiALign for Mask Alignment Improvement </i>
+<i> Figure 32: RoiALign for Mask Alignment Improvement [29] </i>
+
+As a result, the performance of ROIAlign was significantly better than ROIPool.
+
+<img src="./imgs/roialignandpool.JPG" width=629 height=157 /> <br>
+<i> Figure 33: RoiALign Performance Comparison [29] </i>
 
 #### Instance Segmentation
 
 In order to effectively achieve instance segmentation, the masking was decoupled from the class predictions.
 
 The RoI classification branch was used to predict the category instead.
+
+<img src="./imgs/inputmrcnn.jpeg" width=600 height=600 /> <br>
+<i> Figure 34: Example of Mask R-CNN Input Image [30] </i>
 
 ### Possible improvement to Mask R-CNN
 A possible improvement to this project can be replacing the backbone from ResNet101 to a deeper or more efficient architecture.
@@ -617,6 +631,8 @@ Improvement Research Tasks: <br>
 [28] https://medium.datadriveninvestor.com/lidar-3d-perception-and-object-detection-311419886bd2
 
 [29] https://jonathan-hui.medium.com/image-segmentation-with-mask-r-cnn-ebe6d793272#:~:text=Mask%20R%2DCNN%20uses%20ROI,values%20within%20the%20cell%20better.
+
+[30] https://towardsdatascience.com/instance-segmentation-with-mask-r-cnn-6e5c4132030b
 
 ---
 
