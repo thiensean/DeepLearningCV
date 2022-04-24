@@ -583,7 +583,7 @@ The author will research about the use of standardized size ArUco markers for ad
 
 Next step in the research and development work will be to improve this model and to use Mask R-CNN to include image segmentation.
 
-<b> Task 1: Mask R-CNN by expanding on the current Functional API model architecture. -- Ongoing </b> <br>
+<b> Task 1: Image Segmentation using Mask R-CNN -- Ongoing </b> <br>
 Task 2: Panoptic Segmentation with EfficientPS <br>
 Task 3: Single Shot Detectors / YOLO <br>
 Task 4: LiDAR Point Cloud Segmentation <br>
