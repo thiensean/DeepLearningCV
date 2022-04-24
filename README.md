@@ -413,13 +413,26 @@ This effectively recognizes each anchor as an object or not.
 
 With condition being <0.3 and >0.7, there will be some achors that are neither positive or negative and these do not contribute to the training objective. [p]
 
-### Mask Branch
+### Mask Branch [q]
 
 In Mask-RCNN, it uses a Fully Convolution Network (FCN) for the pixel-to-pixel task.
+This extends Faster R-CNN by adding a parallel branch for predicting segmentation masks on top of Faster R-CNN's ability to predict class and bounding box.
 
 In the architecture explained in the original paper, the ResNet-FPN variant was adopted.
 
 To produce a relatively high resolution output to achieve localization accuracy, the keypoint head consisted of a stack of 8, '3×3', '512-d' conv layers, followed by a deconv layer and 2× bilinear upscaling.
+
+#### Pixel-to-Pixel Alignment
+
+To allow pixel level alignment between network inputs and outputs, in the original paper, a simple and quantization-free layer called <b>RoiAlign</b> to preserve the exact spatial locations was proposed.
+
+As a result of 'RoiAlign', the mask accuracy was improved by 10% to 50% [q].
+
+#### Instance Segmentation
+
+In order to effectively achieve instance segmentation, the masking was decoupled from the class predictions.
+
+The RoI classification branch was used to predict the category instead.
 
 ### Possible improvement to Mask R-CNN
 A possible improvement to this project can be replacing the backbone from ResNet101 to a deeper or more efficient architecture.
@@ -619,6 +632,8 @@ Vedantam · Devi Parikh · Dhruv Batra
 [n] An Improved DBSCAN Method for LiDAR Data Segmentation with Automatic Eps Estimation, Chunxiao Wang, Min Ji, Jian Wang, Wei Wen, Ting Li, and Yong Sun
 
 [p] Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks, Shaoqing Ren, Kaiming He, Ross Girshick, and Jian Sun
+
+[q] Mask R-CNN, Kaiming He Georgia Gkioxari Piotr Dollar Ross Girshick, Facebook AI Research (FAIR)
 
 ---
 
