@@ -194,12 +194,15 @@ The gradients for all classes except the target class is set to zero, while the 
 
 This signal is then backpropagated to the rectified convolutional feature maps of interest [e], where the signal is combined to get the GradCAM localization heatmap. [e]
 
+<img src="./imgs/propagation.gif" width=600 height=338 /> <br>
+<i> Figure 10: Backpropagation Visualization </i><br>
+
 The last convolution layer is often used for interpretation because they retain high level spatial features and GradCAM is able to visualize the gradient flowing into the last convolution layer to understand the value importance of each neuron responsible for decision of interest. [e]
 
 Using the gradients or the model loss, we can tell how the characteristics of the image are emphasized through the creation of heatmaps. [13]
 
 <img src="./imgs/gradcamactivate.JPG" width=1635 height=400 /> <br>
-<i> Figure 10: GradCAM Activation </i><br>
+<i> Figure 11: GradCAM Activation [31] </i><br>
 
 In this project, the concept of Grad-CAM was applied to certain classification images.
 
@@ -209,22 +212,22 @@ From the images as follows: We can see how certain features are localized and em
 In this example and in similar images, the model recognizes the 2 arrows.
 
 <img src="./imgs/arrow1.png" width=200 height=200 align='left'/> <br><br><br><br><br><br><br><br><br><br>
-<i> Figure 10: GradCAM 1 </i>
+<i> Figure 11-1: GradCAM 1 </i>
 
 In this example and in similar images, the model recognizes the line across the image.
 
 <img src="./imgs/gradcammask1.png" width=200 height=200 align='left'/> <br><br><br><br><br><br><br><br><br><br>
-<i> Figure 11: GradCAM 2 </i>
+<i> Figure 11-2: GradCAM 2 </i>
 
 In this example and in similar images, the model managed to localize and recognize the circle and its features.
 
 <img src="./imgs/gradcammask2.png" width=200 height=200 align='left'/> <br><br><br><br><br><br><br><br><br><br>
-<i> Figure 12: GradCAM 3 </i>
+<i> Figure 11-3: GradCAM 3 </i>
 
 In this example and in similar images, the model recognizes and emphasizes the half split characteristics of this sign.
 
 <img src="./imgs/gradcammask7.png" width=200 height=200 align='left'/> <br><br><br><br><br><br><br><br><br><br>
-<i> Figure 13: GradCAM 4 </i>
+<i> Figure 11-4: GradCAM 4 </i>
 
 ### Loss Function
 
@@ -650,6 +653,8 @@ Improvement Research Tasks: <br>
 [29] https://jonathan-hui.medium.com/image-segmentation-with-mask-r-cnn-ebe6d793272#:~:text=Mask%20R%2DCNN%20uses%20ROI,values%20within%20the%20cell%20better.
 
 [30] https://towardsdatascience.com/instance-segmentation-with-mask-r-cnn-6e5c4132030b
+
+[31] https://gfycat.com/gifs/search/backpropagation
 
 ---
 
