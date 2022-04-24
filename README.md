@@ -388,10 +388,38 @@ This sliding network is repeated and shared with all locations in an image.
 
 <img src="./imgs/rpn.JPG" width=853 height=526 /> <br>
 <i> Figure 30: Region Proposal Network [p] </i>
+
+The red box centered at the sliding window in the image above is referred to as the anchor.
+An anchor has a scale and aspect ratio which by default is where k = 3 x 3.
           
-The detections using a Region Proposal Network is a class with its probabilities and a bounding box.
+The detections using a Region Proposal Network is a bounding box, class and its probabilities. 
           
 Non-Max Suppression is used to reduce redundancy based on their class scores. The top overlapping proposals are collapsed and used for detection.
+
+#### Losses for Training RPN
+
+The loss function of this architecture for the bounding box and class works by assigning a binary class label (positive or negative) to each anchor.
+
+This effectively recognizes each anchor as an object or not.
+
+##### What defines a positive label?
+
+1. If the intersection over Union (IoU) overlap with the ground truth is over the threshold of 0.7 (by default).
+2. Anchors with the highest Intersection-over-Union (IoU) overlap.
+
+##### What defines a negative label?
+
+1. When the Intersection over Union (IoU) with the ground truth box is lower than 0.3.
+
+With condition being <0.3 and >0.7, there will be some achors that are neither positive or negative and these do not contribute to the training objective. [p]
+
+### Mask Branch
+
+In Mask-RCNN, it uses a Fully Convolution Network (FCN) for the pixel-to-pixel task.
+
+In the architecture explained in the original paper, the ResNet-FPN variant was adopted.
+
+To produce a relatively high resolution output to achieve localization accuracy, the keypoint head consisted of a stack of 8, '3×3', '512-d' conv layers, followed by a deconv layer and 2× bilinear upscaling.
 
 ### Possible improvement to Mask R-CNN
 A possible improvement to this project can be replacing the backbone from ResNet101 to a deeper or more efficient architecture.
@@ -399,7 +427,6 @@ A possible improvement to this project can be replacing the backbone from ResNet
 There are many considerations in this scenario.
 
 Below, is a comparison of architectures that was publicly released to 2019 since ResNet was first published.
-
 
 
 ---
