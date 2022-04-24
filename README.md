@@ -194,8 +194,8 @@ The gradients for all classes except the target class is set to zero, while the 
 
 This signal is then backpropagated to the rectified convolutional feature maps of interest [e], where the signal is combined to get the GradCAM localization heatmap. [e]
 
-<img src="./imgs/propagation.gif" width=600 height=338 /> <br>
-<i> Figure 10: Backpropagation Visualization </i><br>
+<img src="./imgs/propagation.gif" width=960 height=540.8 /> <br>
+<i> Figure 10: Backpropagation Visualization [31] </i><br>
 
 The last convolution layer is often used for interpretation because they retain high level spatial features and GradCAM is able to visualize the gradient flowing into the last convolution layer to understand the value importance of each neuron responsible for decision of interest. [e]
 
