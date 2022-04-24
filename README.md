@@ -443,7 +443,7 @@ This effectively recognizes each anchor as an object or not.
 
 With condition being <0.3 and >0.7, there will be some achors that are neither positive or negative and these do not contribute to the training objective. [p]
 
-### Mask Branch [q]
+## Mask Branch [q]
 
 ---
 
@@ -457,7 +457,7 @@ In the architecture explained in the original paper, the ResNet-FPN variant was 
 
 To produce a relatively high resolution output to achieve localization accuracy, the keypoint head consisted of a stack of 8, '3×3', '512-d' conv layers, followed by a deconv layer and 2× bilinear upscaling.
 
-#### Pixel-to-Pixel Alignment
+### Pixel-to-Pixel Alignment
 
 To allow pixel level alignment between network inputs and outputs, in the original paper, a simple and quantization-free layer called <b>ROIAlign</b> to preserve the exact spatial locations was proposed.
 
@@ -477,7 +477,7 @@ As a result, the performance of ROIAlign was significantly better than ROIPool.
 <img src="./imgs/roialignandpool.JPG" width=629 height=157 /> <br>
 <i> Figure 33: RoiALign Performance Comparison [29] </i>
 
-#### Instance Segmentation
+### Instance Segmentation
 
 In order to effectively achieve instance segmentation, the masking was decoupled from the class predictions.
 
