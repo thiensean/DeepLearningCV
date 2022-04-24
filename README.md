@@ -472,7 +472,7 @@ DETECTION_NMS_THRESHOLD        0.3 <br>
 The masks over the objects were annotated using "makesense.ai" [20] using polygons saved in JSON format.
 
 <img src="./imgs/cars1.JPG" width=1150 height=710 /> <br>
-<i> Figure 32: "Cars" Class Mask Annotation </i>
+<i> Figure 33: "Cars" Class Mask Annotation </i>
 
 ### Image Augmentation
 
@@ -498,7 +498,7 @@ Mask R-CNN annotations and development ongoing..
 ## LiDAR Point Cloud Segmentation
 
 <img src="./imgs/lidarsemanticsegment.png" width=560 height=420 /> <br>
-<i> Figure 33: LiDAR point cloud [26]</i>
+<i> Figure 34: LiDAR point cloud [26]</i>
 
 LiDAR point clouds can be segmented by unsupervised machine learning techniques like DBSCAN.
 
@@ -512,7 +512,7 @@ LiDAR data characteristic makes it suitable to use DBSCAN or K-means clustering 
 Using this method, the algorithm can be optimized and noise points ignored if they are not close enough to core points to be considered as part of the cluster, or belonging to the border point.
 
 <img src="./imgs/lidar2.png" width=1400 height=564 /> <br>
-<i> Figure 34: LiDAR Point Cloud Segmentation [28] </i>
+<i> Figure 35: LiDAR Point Cloud Segmentation [28] </i>
 
 This makes it very useful for LiDAR since LiDAR point cloud density and the rate of scanning (for MEMs LiDAR) is known beforehand. This allows the engineer to tune the 'Epsilon' value of DBSCAN to segment the point cloud effectively. 
 
@@ -525,7 +525,7 @@ K-means clustering, an unsupervised machine learning clustering technique works 
 ### LiDAR Point Cloud Segmentation with Bounding Box
 
 <img src="./imgs/lidar3.png" width=1400 height=555 /> <br>
-<i> Figure 35: LiDAR Point Cloud Segmentation with Bounding Box [28] </i>
+<i> Figure 36: LiDAR Point Cloud Segmentation with Bounding Box [28] </i>
 
 ### Combination with Deep Learning Computer Vision - Fusion Sensor
 
