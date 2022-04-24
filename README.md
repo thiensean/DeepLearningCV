@@ -180,9 +180,26 @@ Figure 9-1: Visualizing Functional API model connections & output shape <br>
 ---
 #### GradCAM
 
+#### Purpose of GradCAM
+
+GradCAM was established with the purpose of allowing visualization of activation regions in Convolutional Neural Network based models, allowing explanability and establishing trust in the model. [e]
+
 Gradient-weighted Class Activation Mapping (Grad-CAM) emphasizes image using the gradient of an image used for classification that flows into the final convolution layer. It produces a coarse localization heatmap that highlights the crucial regions that are being used to predict the classification. [12]
 
+#### Method of GradCAM
+
+An image is forward propagated through the CNN component of the model, and then through a task specific component, for example fully connected layers to get categorical scores for the image.
+
+The gradients for all classes except the target class is set to zero, while the gradient for the target class is set to 1.
+
+This signal is then backpropagated to the rectified convolutional feature maps of interest [e], where the signal is combined to get the GradCAM localization heatmap. [e]
+
+The last convolution layer is often used for interpretation because they retain high level spatial features and GradCAM is able to visualize the gradient flowing into the last convolution layer to understand the value importance of each neuron responsible for decision of interest. [e]
+
 Using the gradients or the model loss, we can tell how the characteristics of the image are emphasized through the creation of heatmaps. [13]
+
+<img src="./imgs/gradcamactivate.JPG" width=1635 height=400 /> <br>
+<i> Figure 10: GradCAM Activation </i><br>
 
 In this project, the concept of Grad-CAM was applied to certain classification images.
 
