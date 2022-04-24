@@ -443,6 +443,8 @@ With condition being <0.3 and >0.7, there will be some achors that are neither p
 
 ### Mask Branch [q]
 
+---
+
 In Mask-RCNN, it uses a Fully Convolution Network (FCN) for the pixel-to-pixel task.
 This extends Faster R-CNN by adding a parallel branch for predicting segmentation masks on top of Faster R-CNN's ability to predict class and bounding box.
 
@@ -486,6 +488,9 @@ The RoI classification branch was used to predict the category instead.
 A possible improvement to this project can be replacing the backbone from ResNet101 to a deeper or more efficient architecture.
 
 There are many considerations in this scenario.
+
+1. A deeper network might not always be better
+2. There are already proposed improvements to Mask R-CNN that are tested and published.
 
 Below, is a comparison of architectures that was publicly released to 2019 since ResNet was first published.
 
