@@ -386,7 +386,7 @@ The method to generating these region proposals can be visualized on a high leve
 
 This sliding network is repeated and shared with all locations in an image.
 
-<img src="./imgs/rpn.JPG width=853 height=526 /> <br>
+<img src="./imgs/rpn.JPG" width=853 height=526 /> <br>
 <i> Figure 30: Region Proposal Network [p] </i>
           
 The detections using a Region Proposal Network is a class with its probabilities and a bounding box.
@@ -400,8 +400,7 @@ There are many considerations in this scenario.
 
 Below, is a comparison of architectures that was publicly released to 2019 since ResNet was first published.
 
-<img src="./imgs/compare.png" width=640 height=505 /> <br>
-<i> Figure 31: Comparison between architectures [23] </i>
+
 
 ---
 ## Modelling Setup
