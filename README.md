@@ -325,12 +325,20 @@ The image dataset could also be more zoomed out so that the model is able to see
 
 # Part 2 - Mask R-CNN with Deep Neural Networks (ResNet)
 
+## Types of Segmentation Architectures to be Studied
+
+1. Mask R-CNN
+2. SOLOv2
+3. Mask-Former
+4. Temporally Efficient Vision Transformer (TeViT) for VIS (new SOTA for VIS at ~70FPS)
+5. STEGO (unsupervised segmentation)
+
 ## Mask R-CNN
 
 Mask R-CNN is planned for implementation in this project. The Mask R-CNN architecture used was cloned from Matterport's Github [19].
 To start off, Mask R-CNN with pre-trained COCO-weights were loaded. In this implementation, only the "heads" layer will be used to train the model.
 
-Mask R-CNN is a state-of-the-art model used for image segmentation, followed closely by new techniques on researches using transformers with Computer Vision, eg. Mask-Former.
+Mask R-CNN was the state-of-the-art model used for image segmentation when it was first released, followed closely by new techniques on researches using transformers with Computer Vision, eg. Mask-Former.
 
 The architecture of Mask R-CNN builds upon Faster-RCNN, hence follows a region based convolutional network that returns bounding box and its class label with confidence score. Mask R-CNN will be used to classify, localize and mask the traffic objects in this project.
 
