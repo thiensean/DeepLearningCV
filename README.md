@@ -24,7 +24,7 @@ Introduction to ADAS:
 <i> Figure 1: Actual ADAS [18] </i>
 
 <img src="./imgs/adas.JPG" width=800 height=420 /> <br>
-<i> Figure 1-a: Various Tasks of ADAS [18] </i>
+<i> Figure 2: Various Tasks of ADAS [18] </i>
 
 Fatalities caused by driving a car is statistically higher than flying, with more than 5 million accidents on the road compared to flying [1].
 
@@ -50,7 +50,7 @@ Traffic signs classification & localization is a topic where automotive deployed
     etc. <br>
     
 <img src="./imgs/classlocalize/63_63.png" width=600 height=400 /> <br>
-<i> Figure 2: Example of object classification and Localization </i>
+<i> Figure 3: Example of object classification and Localization </i>
 
 In part 1 of this project, the foundation of object classification and object localization will be explored. At the end of Part 1 of this project: <br>
     1. The model should be able to classify the image <br>
@@ -77,12 +77,12 @@ R-CNN is significantly slower than Fast R-CNN with a higher training time as thi
 It takes a great amount of time to return an image localization vertices due to its architecture of: <br> Region proposal regeneration -> Feature extraction -> Classification.
 
 <img src="./imgs/models/regionproposal.JPG" width=330 height=300 align='left'/> <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<i> Figure 3: Region Proposal [3][14]</i>
+<i> Figure 4: Region Proposal [3][14]</i>
 
 Every warped region proposal has to be evaluated with ConvNet and this takes up computational power. [14] <br>
 
 <img src="./imgs/models/comparisonmodels.png" width=800 height=350 /> <br>
-<i> Figure 4: Comparison Between Models </i>
+<i> Figure 5: Comparison Between Models </i>
 
 #### Fast R-CNN
 
@@ -95,7 +95,7 @@ Owing to the architecture, the features map had already been completed in the fi
 Fast R-CNN has an ROI pooling layer where there will be class scores for each region proposal. convNet, when comparing to R-CNN is only run once on an image hence it is much faster than R-CNN. <br>
 
 <img src="./imgs/models/frcnn.png" width=800 height=520 /> <br>
-<i> Figure 5: Fast R-CNN architecture [3]</i>
+<i> Figure 6: Fast R-CNN architecture [3]</i>
 
 ---
 
@@ -121,13 +121,13 @@ There are no labels in the images in the dataset and the images have to be prepa
 LabelImg is a great software authored by: tzutalin [15] and it helps with labeling the image quickly by allowing user to draw bounding boxes and write bounding box vertices to an XML file in PascalVOC format so it can be parsed afterwards.
 
 <img src="./imgs/labelimg.JPG" width=500 height=400 /> <br>
-<i> Figure 6: LabelImg [3]</i>
+<i> Figure 7: LabelImg [3]</i>
 
 
 It gives class, coordinates and file path upon saving.
 
 <img src="./imgs/labelimg2.JPG" width=500 height=470 /> <br>
-<i> Figure 7: LabelImg Bounding Box vertices on XML [3]</i>
+<i> Figure 8: LabelImg Bounding Box vertices on XML [3]</i>
 
 ### Modelling
 
@@ -152,7 +152,7 @@ Dropout was added to prevent the model from becoming weight dependent by randoml
 The activation function used for classification was 'Softmax' which will assign class probabilities to each class. [11]
 
 <img src="./imgs/models/sequential.JPG" width=900 height=550 /> <br>
-<i> Figure 8: Sequential Model </i>
+<i> Figure 9: Sequential Model </i>
 
 ---
 #### Functional Model
@@ -172,10 +172,10 @@ The activation functions were different for classification branch and the locali
 'Sigmoid' was used for bounding box regression.
 
 <img src="./imgs/models/Functional2.JPG" width=1100 height=550 /> <br>
-Figure 9: Functional Model with Fast R-CNN architecture <br><br><br>
+Figure 10: Functional Model with Fast R-CNN architecture <br><br><br>
 
 <img src="./imgs/models/model.png" width=350 height=1100 /> <br>
-Figure 9-1: Visualizing Functional API model connections & output shape <br>
+Figure 11: Visualizing Functional API model connections & output shape <br>
 
 ---
 ### GradCAM
@@ -197,14 +197,14 @@ The gradients for all classes except the target class is set to zero, while the 
 This signal is then backpropagated to the rectified convolutional feature maps of interest [e], where the signal is combined to get the GradCAM localization heatmap. [e]
 
 <img src="./imgs/propagation.gif" width=960 height=540.8 /> <br>
-<i> Figure 10: Backpropagation Visualization [31] </i><br>
+<i> Figure 12: Backpropagation Visualization [31] </i><br>
 
 The last convolution layer is often used for interpretation because they retain high level spatial features and GradCAM is able to visualize the gradient flowing into the last convolution layer to understand the value importance of each neuron responsible for decision of interest. [e]
 
 Using the gradients or the model loss, we can tell how the characteristics of the image are emphasized through the creation of heatmaps. [13]
 
 <img src="./imgs/gradcamactivate.JPG" width=1635 height=400 /> <br>
-<i> Figure 11: GradCAM Activation [31] </i><br>
+<i> Figure 13: GradCAM Activation [31] </i><br>
 
 In this project, the concept of Grad-CAM was applied to certain classification images.
 
@@ -214,22 +214,22 @@ From the images as follows: We can see how certain features are localized and em
 In this example and in similar images, the model recognizes the 2 arrows.
 
 <img src="./imgs/arrow1.png" width=200 height=200 align='left'/> <br><br><br><br><br><br><br><br><br><br>
-<i> Figure 11-1: GradCAM 1 </i>
+<i> Figure 14: GradCAM 1 </i>
 
 In this example and in similar images, the model recognizes the line across the image.
 
 <img src="./imgs/gradcammask1.png" width=200 height=200 align='left'/> <br><br><br><br><br><br><br><br><br><br>
-<i> Figure 11-2: GradCAM 2 </i>
+<i> Figure 15: GradCAM 2 </i>
 
 In this example and in similar images, the model managed to localize and recognize the circle and its features.
 
 <img src="./imgs/gradcammask2.png" width=200 height=200 align='left'/> <br><br><br><br><br><br><br><br><br><br>
-<i> Figure 11-3: GradCAM 3 </i>
+<i> Figure 16: GradCAM 3 </i>
 
 In this example and in similar images, the model recognizes and emphasizes the half split characteristics of this sign.
 
 <img src="./imgs/gradcammask7.png" width=200 height=200 align='left'/> <br><br><br><br><br><br><br><br><br><br>
-<i> Figure 11-4: GradCAM 4 </i>
+<i> Figure 17: GradCAM 4 </i>
 
 ### Loss Function
 
@@ -238,7 +238,7 @@ The loss function used for this project was Mean Squared Error (MSE) as it tells
 Ideally, the loss function should be custom written as IoU loss function.
 
 <img src="./imgs/loss.JPG" width=274.4 height=314.4 align='left'/> <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<i> Figure 14: Loss Function - Mean Squared Error [c] </i>
+<i> Figure 18: Loss Function - Mean Squared Error [c] </i>
 
 ### Metric
 
@@ -250,14 +250,14 @@ These 2 metrics will substantiate the classification by telling us the precision
 Intersection over Union (IoU) or 'Jaccard Distance' is a good measure of the accuracy of the regression. [b]
 
 <img src="./imgs/IOU1.JPG" width=280 height=280 align='left' /> <br><br><br><br><br><br><br><br><br><br><br><br><br>
-<i> Figure 15: IOU metric [b] </i>
+<i> Figure 19: IOU metric [b] </i>
 
 #### Results of Classification
 
 Classification results had an average precision score of <b>0.97</b>.
 
 <img src="./imgs/precision.JPG" width=450 height=800 /> <br>
-<i> Figure 16: Results of Classification [b] </i>
+<i> Figure 20: Results of Classification [b] </i>
 
 #### Results of object localization
 
@@ -266,22 +266,22 @@ Average results of IOU is <b>0.88</b>.
 Below are samples of the images that were both classified and localized.
 
 <img src="./imgs/classlocalize/10_10.png" width=500 height=350 /> <br>
-<i> Figure 17: Image localization IOU results </i>
-
-<img src="./imgs/classlocalize/12_12.png" width=500 height=350 /> <br>
-<i> Figure 18: Image localization IOU results </i>
-
-<img src="./imgs/classlocalize/55_55.png" width=500 height=350 /> <br>
-<i> Figure 19: Image localization IOU results </i>
-
-<img src="./imgs/classlocalize/78_78.png" width=500 height=350 /> <br>
-<i> Figure 20: Image localization IOU results </i>
-
-<img src="./imgs/classlocalize/62_62.png" width=500 height=350 /> <br>
 <i> Figure 21: Image localization IOU results </i>
 
-<img src="./imgs/classlocalize/70_70.png" width=500 height=350 /> <br>
+<img src="./imgs/classlocalize/12_12.png" width=500 height=350 /> <br>
 <i> Figure 22: Image localization IOU results </i>
+
+<img src="./imgs/classlocalize/55_55.png" width=500 height=350 /> <br>
+<i> Figure 23: Image localization IOU results </i>
+
+<img src="./imgs/classlocalize/78_78.png" width=500 height=350 /> <br>
+<i> Figure 24: Image localization IOU results </i>
+
+<img src="./imgs/classlocalize/62_62.png" width=500 height=350 /> <br>
+<i> Figure 25: Image localization IOU results </i>
+
+<img src="./imgs/classlocalize/70_70.png" width=500 height=350 /> <br>
+<i> Figure 26: Image localization IOU results </i>
 
 ### Flask API
 
@@ -292,14 +292,14 @@ The rendering of the bounding boxes would be performed on the local machine.
 The file to serve the API was saved as 'serve.py' inside the working folder.
 
 <img src="./imgs/api.JPG" width=950 height=500 /> <br>
-<i> Figure 23: API structure </i>
+<i> Figure 27: API structure </i>
 
 ### Simple web deployment
 
 The model was deployed as a simple web app in Streamlit.
 
 <img src="./imgs/streamlit.gif" width=1100 height=600 /> <br>
-<i> Figure 24: Simple web app using Streamlit to demonstrate model deployment </i>
+<i> Figure 28: Simple web app using Streamlit to demonstrate model deployment </i>
 
 ## Object Tracking
 
@@ -315,12 +315,12 @@ A threshold of 30 pixels were set so that if the object detection from the previ
 Below are a sample of the results:
 
 <img src="./imgs/opencvdnn.JPG" width=1150 height=750 /> <br>
-<i> Figure 25: Trajectory tracking using yoloV4 with OpenCV </i>
+<i> Figure 29: Trajectory tracking using yoloV4 with OpenCV </i>
 
 This is a work in progress and might work better using image segmentation techniques. [17][m, Image Segmentation and Pattern Matching]
 
 <img src="./imgs/trajectorytracking.gif" width=500 height=340 /> <br>
-<i> Figure 26: Trimmed video with carplates censored. [18] </i>
+<i> Figure 30: Trimmed video with carplates censored. [18] </i>
 
 ---
 
@@ -365,7 +365,7 @@ Mask R-CNN was the state-of-the-art model used for image segmentation when it wa
 The architecture of Mask R-CNN builds upon Faster-RCNN, hence follows a region based convolutional network that returns bounding box and its class label with confidence score. Mask R-CNN will be used to classify, localize and mask the traffic objects in this project.
 
 <img src="./imgs/mask-rcnn-architecture.png" width=1150 height=450 /> <br>
-<i> Figure 27: Mask R-CNN architecture [g] </i>
+<i> Figure 31: Mask R-CNN architecture [g] </i>
 
 ### Backbone - ResNet101
 
@@ -383,7 +383,7 @@ Hence, the residual mapping to be learnt can be represented by F(x) = H(x) - x, 
 Below is an excellent visualization in the article shared above. <br>
 
 <img src="./imgs/skip.png" width=447 height=237 /> <br>
-<i> Figure 28: Skip Connections in ResNet [21] </i> <br>
+<i> Figure 32: Skip Connections in ResNet [21] </i> <br>
 
 ### Vanishing/Exploding gradients
 
@@ -396,7 +396,7 @@ Hence, when a large change occurs in the input, a resulting large derivative val
 This mathematical phenomenon is represented by the graph below:
 
 <img src="./imgs/sigmoid.png" width=700 height=268 /> <br>
-<i> Figure 29: Small derivative term after a large resulting change in input [22] </i>
+<i> Figure 33: Small derivative term after a large resulting change in input [22] </i>
 
 #### Backpropagation
 
@@ -417,7 +417,7 @@ The method to generating these region proposals can be visualized on a high leve
 This sliding network is repeated and shared with all locations in an image.
 
 <img src="./imgs/rpn.JPG" width=853 height=526 /> <br>
-<i> Figure 30: Region Proposal Network [p] </i>
+<i> Figure 34: Region Proposal Network [p] </i>
 
 The red box centered at the sliding window in the image above is referred to as the anchor.
 An anchor has a scale and aspect ratio which by default is where k = 3 x 3.
@@ -449,7 +449,7 @@ In Mask-RCNN, it uses a Fully Convolution Network (FCN) for the pixel-to-pixel t
 This extends Faster R-CNN by adding a parallel branch for predicting segmentation masks on top of Faster R-CNN's ability to predict class and bounding box.
 
 <img src="./imgs/mrcnn-branch.png" width=850 height=334 /> <br>
-<i> Figure 31: Mask R-CNN Branch Extended from Faster R-CNN </i>
+<i> Figure 35: Mask R-CNN Branch Extended from Faster R-CNN </i>
 
 In the architecture explained in the original paper, the ResNet-FPN variant was adopted.
 
@@ -468,12 +468,12 @@ Furthermore, the size of the target cell was partitioned to be the same size.
 Interpolation was also one technique of Mask R-CNN's ROI Align to calculate and improve the feature map values within the cell, as can be seen in the image below. [29]
 
 <img src="./imgs/roialign.JPG" width=684 height=549 /> <br>
-<i> Figure 32: RoiALign for Mask Alignment Improvement [29] </i>
+<i> Figure 36: RoiALign for Mask Alignment Improvement [29] </i>
 
 As a result, the performance of ROIAlign was significantly better than ROIPool.
 
 <img src="./imgs/roialignandpool.JPG" width=629 height=157 /> <br>
-<i> Figure 33: RoiALign Performance Comparison [29] </i>
+<i> Figure 37: RoiALign Performance Comparison [29] </i>
 
 ### Instance Segmentation
 
@@ -482,7 +482,7 @@ In order to effectively achieve instance segmentation, the masking was decoupled
 The RoI classification branch was used to predict the category instead.
 
 <img src="./imgs/inputmrcnn.jpeg" width=600 height=600 /> <br>
-<i> Figure 34: Example of Mask R-CNN Input Image [30] </i>
+<i> Figure 38: Example of Mask R-CNN Input Image [30] </i>
 
 ### Possible improvement to Mask R-CNN
 A possible improvement to this project can be replacing the backbone from ResNet101 to a deeper or more efficient architecture.
@@ -511,7 +511,7 @@ DETECTION_NMS_THRESHOLD        0.3 <br>
 The masks over the objects were annotated using "makesense.ai" [20] using polygons saved in JSON format.
 
 <img src="./imgs/cars1.JPG" width=1150 height=710 /> <br>
-<i> Figure 33: "Cars" Class Mask Annotation </i>
+<i> Figure 39: "Cars" Class Mask Annotation </i>
 
 ### Image Augmentation
 
@@ -537,7 +537,7 @@ Mask R-CNN annotations and development ongoing..
 ## LiDAR Point Cloud Segmentation
 
 <img src="./imgs/lidarsemanticsegment.png" width=560 height=420 /> <br>
-<i> Figure 34: LiDAR point cloud [26]</i>
+<i> Figure 40: LiDAR point cloud [26]</i>
 
 LiDAR point clouds can be segmented by unsupervised machine learning techniques like DBSCAN.
 
@@ -551,7 +551,7 @@ LiDAR data characteristic makes it suitable to use DBSCAN or K-means clustering 
 Using this method, the algorithm can be optimized and noise points ignored if they are not close enough to core points to be considered as part of the cluster, or belonging to the border point.
 
 <img src="./imgs/lidar2.png" width=1400 height=564 /> <br>
-<i> Figure 35: LiDAR Point Cloud Segmentation [28] </i>
+<i> Figure 41: LiDAR Point Cloud Segmentation [28] </i>
 
 This makes it very useful for LiDAR since LiDAR point cloud density and the rate of scanning (for MEMs LiDAR) is known beforehand. This allows the engineer to tune the 'Epsilon' value of DBSCAN to segment the point cloud effectively. 
 
@@ -565,21 +565,15 @@ K-means clustering, an unsupervised machine learning clustering technique works 
 ### LiDAR Point Cloud Classification and Localization
 
 <img src="./imgs/3dsiamrpn.JPG" width=1223 height=474 /> <br>
-<i> Figure 36: Architecture of 3D-SiamRPN for processing LiDAR Point Cloud [h] </i>
+<i> Figure 42: Architecture of 3D-SiamRPN for processing LiDAR Point Cloud [h] </i> <br>
 
 <img src="./imgs/lidar3.png" width=1400 height=555 /> <br>
-<i> Figure 37: LiDAR Point Cloud Segmentation with Bounding Box [28] </i>
+<i> Figure 43: LiDAR Point Cloud Segmentation with Bounding Box [28] </i>
 
 ### Combination with Deep Learning Computer Vision - Fusion Sensor
 
 LiDAR can be merged with Computer Vision to create fusion sensor, turning the sensor into a reliable method that complements the strength and weaknesses of each other.
 
-## Research into usage of standardized ArUco fiducial markers for ADAS
-
-The author will research about the use of standardized size ArUco markers for adding another layer of depth perception for various tasks.
-
-<img src="./imgs/ArUco.JPG" width=850 height=620 /> <br>
-<i> Figure 36: Author proposed method using ArUco fiducial markers for naive depth & perception estimation [i] </i>
 
 ## Ongoing Project
 
