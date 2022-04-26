@@ -565,7 +565,7 @@ K-means clustering, an unsupervised machine learning clustering technique works 
 ### LiDAR Point Cloud Classification and Localization
 
 <img src="./imgs/3dsiamrpn.JPG" width=1223 height=474 /> <br>
-<i> Figure 36: LiDAR Point Cloud Segmentation with Bounding Box [28] </i>
+<i> Figure 36: Architecture of 3D-SiamRPN for processing LiDAR Point Cloud [h] </i>
 
 <img src="./imgs/lidar3.png" width=1400 height=555 /> <br>
 <i> Figure 37: LiDAR Point Cloud Segmentation with Bounding Box [28] </i>
@@ -697,6 +697,8 @@ Vedantam · Devi Parikh · Dhruv Batra
 [p] Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks, Shaoqing Ren, Kaiming He, Ross Girshick, and Jian Sun
 
 [q] Mask R-CNN, Kaiming He Georgia Gkioxari Piotr Dollar Ross Girshick, Facebook AI Research (FAIR)
+
+[h] 3D-SiamRPN: An End-to-end Learning Method for Real-time 3D Single Object Tracking using Raw Point Cloud
 
 ---
 
