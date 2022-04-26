@@ -583,7 +583,7 @@ Next step in the research and development work will be to improve this model and
 Task 2: Panoptic Segmentation with EfficientPS <br>
 Task 3: Single Shot Detectors / YOLO <br>
 Task 4: LiDAR Point Cloud Segmentation <br>
-Task 5: 3D-SiamRPN LiDAR Point Cloud Processing
+Task 5: 3D-SiamRPN LiDAR Point Cloud Processing <br>
 Task 6: Lane Detection - Rule Based & Deep Learning methods <br>
 Task 7: Stereo Camera CV <br>
 Task 8: Rain Removal based on research paper 'A Model-driven Deep Neural Network for Single Image Rain Removal' [j] <br>
