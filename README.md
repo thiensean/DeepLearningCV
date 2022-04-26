@@ -561,10 +561,14 @@ The epsilon value can be optimized and can be studied further. [n]
 
 K-means clustering, an unsupervised machine learning clustering technique works by minimizing the sum of the distances between each object or cluster centroid by predefining the 'K' value, also known as the the number of centroids. This algorithm can also be used to segment the point cloud but its not as intuitive as DBSCAN due to the need to define the number of centroids.
 
-### LiDAR Point Cloud Segmentation with Bounding Box
+## 3D-SiamRPN
+### LiDAR Point Cloud Classification and Localization
+
+<img src="./imgs/3dsiamrpn.JPG" width=1223 height=474 /> <br>
+<i> Figure 36: LiDAR Point Cloud Segmentation with Bounding Box [28] </i>
 
 <img src="./imgs/lidar3.png" width=1400 height=555 /> <br>
-<i> Figure 36: LiDAR Point Cloud Segmentation with Bounding Box [28] </i>
+<i> Figure 37: LiDAR Point Cloud Segmentation with Bounding Box [28] </i>
 
 ### Combination with Deep Learning Computer Vision - Fusion Sensor
 
