@@ -84,18 +84,18 @@ Every warped region proposal has to be evaluated with ConvNet and this takes up 
 <img src="./imgs/models/comparisonmodels.png" width=800 height=350 /> <br>
 <i> Figure 5: Comparison Between Models </i>
 
-#### Fast R-CNN
+#### Faster R-CNN
 
-Fast R-CNN works with an architecture of region proposal network.
+Faster R-CNN works with an architecture of region proposal network.
 
 It uses a CNN to extract feature maps from the image and in parallel, it tries to find region proposals.
 
 Owing to the architecture, the features map had already been completed in the first step (CNN) and region proposals can now be mapped to the features map.
 
-Fast R-CNN has an ROI pooling layer where there will be class scores for each region proposal. convNet, when comparing to R-CNN is only run once on an image hence it is much faster than R-CNN. <br>
+Faster R-CNN has an ROI pooling layer where there will be class scores for each region proposal. convNet, when comparing to R-CNN is only run once on an image hence it is much faster than R-CNN. <br>
 
 <img src="./imgs/models/frcnn.png" width=800 height=520 /> <br>
-<i> Figure 6: Fast R-CNN architecture [3]</i>
+<i> Figure 6: Faster R-CNN architecture [3]</i>
 
 ---
 
