@@ -84,6 +84,16 @@ Every warped region proposal has to be evaluated with ConvNet and this takes up 
 <img src="./imgs/models/comparisonmodels.png" width=800 height=350 /> <br>
 <i> Figure 5: Comparison Between Models </i>
 
+#### Fast R-CNN
+
+Fast R-CNN was built upon R-CNN to improve the speed of object detection algorithm.
+
+The input image is fed through the convolution layers where the feature maps will be generated after convolution operations.
+
+At the feature map generation step, the potential regions for ROI generation are identified and warped into squares and an ROI pooling layer then reshapes the ROI and feeds it through the fully connected layer.
+
+Using sigmoid activation combined with Mean Squared Error (MSE) loss function, the offset of the bounding box can be determined through regression operation.
+
 #### Faster R-CNN
 
 Faster R-CNN works with an architecture of region proposal network.
