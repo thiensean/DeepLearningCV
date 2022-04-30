@@ -580,6 +580,10 @@ K-means clustering, an unsupervised machine learning clustering technique works 
 <img src="./imgs/lidar3.png" width=1400 height=555 /> <br>
 <i> Figure 43: LiDAR Point Cloud Segmentation with Bounding Box [28] </i>
 
+### Introduction to Siamese Networks
+
+To be updated after completion of projects at work.
+
 ### Combination with Deep Learning Computer Vision - Fusion Sensor
 
 LiDAR can be merged with Computer Vision to create fusion sensor, turning the sensor into a reliable method that complements the strength and weaknesses of each other.
