@@ -538,7 +538,7 @@ Image augmentation was used to allow the model to see more variations of the sam
 
 ---
 
-Mask R-CNN annotations and development ongoing..
+Mask R-CNN annotations and development ongoing.. To be updated, engaged with projects at work currently.
 
 ---
 
@@ -582,7 +582,7 @@ K-means clustering, an unsupervised machine learning clustering technique works 
 
 ### Introduction to Siamese Networks
 
-To be updated after completion of projects at work.
+To be updated, engaged with projects at work currently.
 
 ### Combination with Deep Learning Computer Vision - Fusion Sensor
 
