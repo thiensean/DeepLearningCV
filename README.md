@@ -592,7 +592,18 @@ Training was tough with the model easily overfitting.
 
 Gradients tend to explode to infinity during training if network gets too deep or gets too wide.
 
+#### Regularization
+
+Dropout layers of 0.3 were used to help improve overfitting.
+Reducing learning rate on plateau also helped with overfitting significantly.
+
+By applying a factor of 0.8 to the learning rate and a patience of 10 epochs, the training improved significantly with gradient descent becoming more stable.
+
 The architecture was modified to include convolution layers with batch normalization with a relatively small dense layer for classification.
+
+The validation sparse categorical accuracy managed to eventually increase past 0.9 in the final training.
+
+The training set and validation set sparse categorical accuracy eventually reached similar accuracy potentially signifying lesser overfitting in the training.
 
 #### Losses
 
