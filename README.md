@@ -551,8 +551,6 @@ Mask R-CNN annotations and development ongoing.. To be updated, engaged with pro
 
 LiDAR point clouds can be segmented by unsupervised machine learning techniques like DBSCAN.
 
-They can be treated as 'pixels' with depth information, adding another dimension to the point cloud visualization.
-
 ### DBSCAN
 
 DBSCAN, Density-Based Spatial Clustering of Applications with Noise, an unsupervised machine learning algorithm is useful in this aspect. LiDAR point clouds data returns unlabeled and heavily clustered when the LiDAR laser beam lands and is reflected upon an object.
@@ -579,6 +577,37 @@ K-means clustering, an unsupervised machine learning clustering technique works 
 
 <img src="./imgs/lidar3.png" width=1400 height=555 /> <br>
 <i> Figure 43: LiDAR Point Cloud Segmentation with Bounding Box [28] </i>
+
+### PointNet
+
+Part of 3D-SiamRPN related work uses PointNet and hence 3D CAD files were converted to point clouds to attempt to showcase classification of objects.
+
+#### Augmentation
+
+Similar to images, point clouds can be augmented too. Augmentation of +/- 0.005 was randomly performed on each object in the point cloud dataset.
+
+#### Training Point Cloud for Classification
+
+Training was tough with the model easily overfitting.
+
+Gradients tend to explode to infinity during training if network gets too deep or gets too wide.
+
+The architecture was modified to include convolution layers with batch normalization with a relatively small dense layer for classification.
+
+#### Losses
+
+The losses used was "Sparse Categorical Entropy" for point cloud classification task.
+
+#### Results
+
+<img src="./imgs/pointcloud/3.JPG" width=314 height=516 /> <br>
+<i> Figure 44: Point Cloud Object Classification </i>
+
+<img src="./imgs/pointcloud/4.JPG" width=299 height=504 /> <br>
+<i> Figure 45: Point Cloud Object Classification </i>
+
+<img src="./imgs/pointcloud/5.JPG" width=321 height=508 /> <br>
+<i> Figure 46: Point Cloud Object Classification </i>
 
 ### Introduction to Siamese Networks
 
