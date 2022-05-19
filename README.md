@@ -13,8 +13,11 @@ Shilpa Sindhe:
 https://www.linkedin.com/in/shilpa-sindhe <br>
 https://shilpa-leo.medium.com/ <br>
 
+##### Currently only the foundation code has been uploaded, development for my projects in my dayjob and this project is maintained separately hence seek your understanding for the lack of updates of further development.
+##### As this project serves to demonstrate the foundation without pretrained weights and backbones, feel free to contact me for any questions regarding my experience in advanced Computer Vision.
+
 ---
-# Part 1 - Foundation of Classification & Localization
+# Part 1 - Foundation of Classification & Localization (without using transfer learning, backbones, pretrained weights)
 
 ## Executive Summary
 
